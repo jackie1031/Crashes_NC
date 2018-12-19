@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS PedestrianCrash;
 CREATE TABLE PedestrianCrash(
-  ,PedCrashID  INT NOT NULL AUTO_INCREMENT
+  PedCrashID  INT NOT NULL AUTO_INCREMENT
   ,geo_point_2d VARCHAR(29) NOT NULL
   ,geo_shape    VARCHAR(74) NOT NULL
   ,objectid_1   NUMERIC(7,1) NOT NULL
