@@ -14,13 +14,13 @@ public class PedInjure{
 
 	public PedInjure(String ped_pos, String ped_race, String pedage_grp, String ped_age, 
 		String ped_injury, String ped_sex, String pedCrashId) {
+		this.pedCrashId = pedCrashId;
 		this.ped_pos = ped_pos;
 		this.ped_race = ped_race;
 		this.pedage_grp = pedage_grp;
 		this.ped_age = ped_age;
 		this.ped_injury = ped_injury;
 		this.ped_sex = ped_sex;
-		this.pedCrashId = pedCrashId;
 	}
 
 

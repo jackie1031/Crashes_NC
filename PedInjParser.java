@@ -1,5 +1,3 @@
-package jchoi100_jlee381_600_315;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -10,60 +8,64 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class ArtworkParser {
+public class PedInjParser {
 
 	private static final String INPUT_FILE = "pedestrian-crashes-chapel-hill-region.csv";
-	private static final String OUTPUT_FILE = "out-artwork-parsed.csv";
-	private static final String ERROR_FILE = "out-artwork-error.csv";
-	private static final String SQL_FILE = "artwork.sql";
+	private static final String OUTPUT_FILE = "out-pedestrian-injured.csv";
+	private static final String ERROR_FILE = "out-pedestrian-injured-error.csv";
+	private static final String SQL_FILE = "pedInjure.sql";
 	private static final int NUM_ELEMENTS = 10;
-	private static HashSet<String> artwork = new HashSet<>();
-	private static HashSet<String> errorArtwork = new HashSet<>();
+	private static HashSet<String> pedInjure = new HashSet<>();
+	private static HashSet<String> errorpedInjure = new HashSet<>();
 	
 	private static void parse(File inFile, File outFile, File errorFile) throws IOException {
-		BufferedWriter writer = new BufferedWriter(new FileWriter(outFile));
+		BufferedWriter writer = new BufferedWriter(new Fi leWriter(outFile));
 		BufferedWriter errorWriter = new BufferedWriter(new FileWriter(errorFile));
 		BufferedWriter sqlWriter = new BufferedWriter(new FileWriter(SQL_FILE, true));
-		ArrayList<Artwork> tupleList = new ArrayList<>();
+		ArrayList<PedInjure> tupleList = new ArrayList<>();
 		tupleSeparator(tupleList, inFile, outFile);
 		
 		//This part should be commented out after executing this program
 		//for the first time for the first horizontally fragmented table.
 		//It won't matter with running the program though.
-//		sqlWriter.write("CREATE TABLE IF NOT EXISTS Artwork(\n");
-//		sqlWriter.write("    Title       VARCHAR(100)\n");
-//		sqlWriter.write("   ,Year   	INTEGER\n");
-//		sqlWriter.write("   ,Medium         VARCHAR(80)\n");
-//		sqlWriter.write("   ,Width         DECIMAL(10,2)\n");
-//		sqlWriter.write("   ,Height         DECIMAL(10,2)\n");
-//		sqlWriter.write("   ,Depth         DECIMAL(10,2)\n");
-//		sqlWriter.write("   ,CreditLine         VARCHAR(70)\n");
-//		sqlWriter.write("   ,Classification         VARCHAR(30)\n");
-//		sqlWriter.write("   ,Department         VARCHAR(30)\n");
-//		sqlWriter.write("   ,YearAcquired         INTEGER\n");
-//		sqlWriter.write("   ,CuratorApproved         VARCHAR(2)\n");
-//		sqlWriter.write("   ,ObjectId         INTEGER NOT NULL\n");
-//		sqlWriter.write("   ,PRIMARY KEY(ObjectId)\n");
-//		sqlWriter.write(");\n");
+		sqlWriter.write("Drop TABLE IF EXISTS PedInjure;\n");
+		sqlWriter.write("CREATE TABLE PedInjure(\n");
+		sqlWriter.write("pedCrashId INT NOT NULL AUTO_INCREMENT");
+		sqlWriter.write("    ,ped_pos      VARCHAR(46) NOT NULL\n");
+		sqlWriter.write("    ,ped_race     VARCHAR(15) NOT NULL\n");
+		sqlWriter.write("    ,pedage_grp   VARCHAR(7) NOT NULL\n");
+		sqlWriter.write("    ,ped_age      VARCHAR(7) NOT NULL\n");
+		sqlWriter.write("    ,ped_injury   VARCHAR(19) NOT NULL \n");
+		sqlWriter.write("    ,ped_sex      VARCHAR(7) NOT NULL\n");
+		sqlWriter.write("   ,CreditLine         VARCHAR(70)\n");
+		sqlWriter.write("   ,Classification         VARCHAR(30)\n");
+		sqlWriter.write("   ,Department         VARCHAR(30)\n");
+		sqlWriter.write("   ,YearAcquired         INTEGER\n");
+		sqlWriter.write("   ,CuratorApproved         VARCHAR(2)\n");
+		sqlWriter.write("   ,ObjectId         INTEGER NOT NULL\n");
+		sqlWriter.write("   ,PRIMARY KEY(pedCrashId)\n");
+		sqlWriter.write(");\n");
 
-//		writer.write("Title,Year,Medium,Width,Height,Depth,CreditLine,Classification,Department,YearAcquired,CuratorApproved,ObjectID\n");
-//		errorWriter.write("Title,Year,Medium,Width,Height,Depth,CreditLine,Classification,Department,YearAcquired,CuratorApproved,ObjectID\n");
+		writer.write(" pedCrashId,ped_pos,  ped_race,  pedage_grp,  ped_age,  ped_injury,  ped_sex\n");
+		errorWriter.write(" pedCrashId,ped_pos,  ped_race,  pedage_grp,  ped_age,  ped_injury,  ped_sex\n");
+
 
 		//Write the result in a csv file
 		for (int i = 0; i < tupleList.size(); i++) {
-			Artwork oneArtwork = tupleList.get(i);
-			if (!oneArtwork.containsError() && isNumeric(oneArtwork.year)) {
-				String key = oneArtwork.objectId + "";
-				if (!artwork.contains(key)) {
-					artwork.add(key);
-					writer.write(oneArtwork.toString() + "\n");
-					sqlWriter.write(oneArtwork.toSqlStatement() + "\n");
+			PedInjure oneEntry = tupleList.get(i);
+			// if (!oneEntry.containsError() && isNumeric(oneEntry.year)) {
+			if (!oneEntry.containsError()) {
+				String key = oneEntry.pedCrashId + "";
+				if (!pedInjure.contains(key)) {
+					pedInjure.add(key);
+					writer.write(oneEntry.toString() + "\n");
+					sqlWriter.write(oneEntry.toSqlStatement() + "\n");
 				}
 			} else {
-				String key = oneArtwork.objectId + "";
-				if (!errorArtwork.contains(key)) {
-					errorArtwork.add(key);
-					errorWriter.write(oneArtwork.toString() + "\n");
+				String key = oneEntry.objectId + "";
+				if (!errorpedInjure.contains(key)) {
+					errorpedInjure.add(key);
+					errorpedInjure.write(oneEntry.toString() + "\n");
 				}
 			}
 		}
