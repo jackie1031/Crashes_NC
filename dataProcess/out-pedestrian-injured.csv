@@ -1,257 +1,257 @@
- pedCrashId,ped_pos, ped_race,  pedage_grp,  ped_age,  ped_injury,  ped_sex
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='1'}
-pedInjure{ped_pos='Intersection Proper', ped_race='White', pedage_grp='30-39', ped_age='34', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='2'}
-pedInjure{ped_pos='Intersection Proper', ped_race='White', pedage_grp='60-69', ped_age='61', ped_injury='O: No Injury', ped_sex='Male', pedCrashId='3'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='4'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='5'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='3', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='6'}
-pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='7'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='49', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='8'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='23', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='9'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='10'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='16', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='11'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='60-69', ped_age='60', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='12'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='13'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='46', ped_injury='A: Disabling Injury', ped_sex='Male', pedCrashId='14'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='64', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='15'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='40-49', ped_age='46', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='16'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='36', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='17'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='22', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='18'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='60', ped_injury='K: Killed', ped_sex='Female', pedCrashId='19'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='20'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='21'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='17', ped_injury='O: No Injury', ped_sex='Male', pedCrashId='22'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='46', ped_injury='A: Disabling Injury', ped_sex='Male', pedCrashId='23'}
-pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='24'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='25'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='60-69', ped_age='60', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='26'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='60-69', ped_age='68', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='27'}
-pedInjure{ped_pos='Other / Unknown', ped_race='Black', pedage_grp='30-39', ped_age='34', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='28'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Hispanic', pedage_grp='0-19', ped_age='4', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='29'}
-pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='30-39', ped_age='37', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='30'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='13', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='31'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='25-29', ped_age='28', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='32'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='45', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='33'}
-pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='O: No Injury', ped_sex='Male', pedCrashId='34'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='35'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='45', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='36'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='37'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='38'}
-pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='30-39', ped_age='39', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='39'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='25-29', ped_age='25', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='40'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='O: No Injury', ped_sex='Female', pedCrashId='41'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='46', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='42'}
-pedInjure{ped_pos='Other / Unknown', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='43'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='30', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='44'}
-pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='White', pedage_grp='0-19', ped_age='22', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='45'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='40-49', ped_age='45', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='46'}
-pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='White', pedage_grp='0-19', ped_age='23', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='47'}
-pedInjure{ped_pos='Driveway / Alley', ped_race='Asian', pedage_grp='0-19', ped_age='2', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='48'}
-pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='Black', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='49'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='19', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='50'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='64', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='51'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='25-29', ped_age='27', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='52'}
-pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='60-69', ped_age='0', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='53'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='22', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='54'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='49', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='55'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='56'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='57'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='47', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='58'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='59'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='O: No Injury', ped_sex='Male', pedCrashId='60'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='40', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='61'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='62'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='O: No Injury', ped_sex='Male', pedCrashId='63'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='65', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='64'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='30-39', ped_age='33', ped_injury='K: Killed', ped_sex='Female', pedCrashId='65'}
-pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='66'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='18', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='67'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='37', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='68'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='51', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='69'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='70'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='57', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='71'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='72'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='7', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='73'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='74'}
-pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='Black', pedage_grp='25-29', ped_age='26', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='75'}
-pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='50-59', ped_age='52', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='76'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='7', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='77'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='Unknown', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='78'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='40-49', ped_age='47', ped_injury='O: No Injury', ped_sex='Male', pedCrashId='79'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='57', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='80'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='43', ped_injury='K: Killed', ped_sex='Female', pedCrashId='81'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='25-29', ped_age='25', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='82'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='17', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='83'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='84'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='85'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='86'}
-pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='40-49', ped_age='45', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='87'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='39', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='88'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Unknown/Missing', pedage_grp='30-39', ped_age='30', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='89'}
-pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='White', pedage_grp='60-69', ped_age='66', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='90'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='40-49', ped_age='41', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='91'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='27', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='92'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Hispanic', pedage_grp='40-49', ped_age='43', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='93'}
-pedInjure{ped_pos='Travel Lane', ped_race='Unknown/Missing', pedage_grp='60-69', ped_age='Unknown', ped_injury='C: Possible Injury', ped_sex='Unknown', pedCrashId='94'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='0-19', ped_age='23', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='95'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='22', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='96'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='97'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='98'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='40', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='99'}
-pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='White', pedage_grp='40-49', ped_age='40', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='100'}
-pedInjure{ped_pos='Other / Unknown', ped_race='Black', pedage_grp='60-69', ped_age='Unknown', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='101'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='68', ped_injury='O: No Injury', ped_sex='Male', pedCrashId='102'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='103'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='37', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='104'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='105'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='106'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='107'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='108'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='109'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='110'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='13', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='111'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='50-59', ped_age='52', ped_injury='A: Disabling Injury', ped_sex='Male', pedCrashId='112'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='7', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='113'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='114'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='115'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='116'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='117'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='42', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='118'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='40-49', ped_age='41', ped_injury='K: Killed', ped_sex='Female', pedCrashId='119'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Asian', pedage_grp='30-39', ped_age='36', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='120'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='121'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='0', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='122'}
-pedInjure{ped_pos='Travel Lane', ped_race='Asian', pedage_grp='0-19', ped_age='22', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='123'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='124'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='50', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='125'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Hispanic', pedage_grp='30-39', ped_age='37', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='126'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='127'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='23', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='128'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='47', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='129'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='6', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='130'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='30-39', ped_age='35', ped_injury='O: No Injury', ped_sex='Male', pedCrashId='131'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='60-69', ped_age='0', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='132'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='19', ped_injury='K: Killed', ped_sex='Male', pedCrashId='133'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='56', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='134'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='11', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='135'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='136'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='40-49', ped_age='44', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='137'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='15', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='138'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='139'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='A: Disabling Injury', ped_sex='Male', pedCrashId='140'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Other', pedage_grp='30-39', ped_age='30', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='141'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='36', ped_injury='O: No Injury', ped_sex='Female', pedCrashId='142'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='30-39', ped_age='35', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='143'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Asian', pedage_grp='40-49', ped_age='47', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='144'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='Unknown Injury', ped_sex='Male', pedCrashId='145'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='56', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='146'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='57', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='147'}
-pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='60-69', ped_age='Unknown', ped_injury='Unknown Injury', ped_sex='Female', pedCrashId='148'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='23', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='149'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='50', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='150'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='151'}
-pedInjure{ped_pos='Travel Lane', ped_race='Asian', pedage_grp='30-39', ped_age='33', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='152'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='44', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='153'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='K: Killed', ped_sex='Female', pedCrashId='154'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='40-49', ped_age='43', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='155'}
-pedInjure{ped_pos='Travel Lane', ped_race='Asian', pedage_grp='30-39', ped_age='39', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='156'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Other', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='157'}
-pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='0-19', ped_age='11', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='158'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='159'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='160'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='32', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='161'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='162'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='46', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='163'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='164'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='50-59', ped_age='51', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='165'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='166'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='60-69', ped_age='62', ped_injury='O: No Injury', ped_sex='Female', pedCrashId='167'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='40-49', ped_age='41', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='168'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='31', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='169'}
-pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='170'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='171'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='15', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='172'}
-pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='Black', pedage_grp='60-69', ped_age='62', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='173'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='174'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='175'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='40-49', ped_age='47', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='176'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='29', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='177'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='40', ped_injury='A: Disabling Injury', ped_sex='Male', pedCrashId='178'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='179'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='35', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='180'}
-pedInjure{ped_pos='Intersection Proper', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='181'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='56', ped_injury='O: No Injury', ped_sex='Male', pedCrashId='182'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='40-49', ped_age='45', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='183'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Asian', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='184'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='0-19', ped_age='19', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='185'}
-pedInjure{ped_pos='Intersection Proper', ped_race='White', pedage_grp='0-19', ped_age='15', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='186'}
-pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='50-59', ped_age='50', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='187'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='188'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='189'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='50', ped_injury='O: No Injury', ped_sex='Female', pedCrashId='190'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='23', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='191'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='62', ped_injury='K: Killed', ped_sex='Male', pedCrashId='192'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='38', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='193'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='194'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='30-39', ped_age='38', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='195'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='196'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='197'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='30-39', ped_age='30', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='198'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='48', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='199'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Native American', pedage_grp='50-59', ped_age='56', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='200'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='31', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='201'}
-pedInjure{ped_pos='Driveway / Alley', ped_race='Black', pedage_grp='40-49', ped_age='45', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='202'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='23', ped_injury='Unknown Injury', ped_sex='Male', pedCrashId='203'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Hispanic', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='204'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='40-49', ped_age='45', ped_injury='Unknown Injury', ped_sex='Male', pedCrashId='205'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='206'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='37', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='207'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='7', ped_injury='A: Disabling Injury', ped_sex='Male', pedCrashId='208'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='40-49', ped_age='45', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='209'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Native American', pedage_grp='0-19', ped_age='21', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='210'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='211'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='6', ped_injury='O: No Injury', ped_sex='Female', pedCrashId='212'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Hispanic', pedage_grp='0-19', ped_age='18', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='213'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='47', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='214'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='25', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='215'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='216'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='50-59', ped_age='55', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='217'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='218'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='39', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='219'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='53', ped_injury='K: Killed', ped_sex='Male', pedCrashId='220'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='30-39', ped_age='30', ped_injury='K: Killed', ped_sex='Male', pedCrashId='221'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Hispanic', pedage_grp='0-19', ped_age='1', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='222'}
-pedInjure{ped_pos='Intersection Proper', ped_race='Black', pedage_grp='40-49', ped_age='43', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='223'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='224'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='225'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='25-29', ped_age='25', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='226'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='14', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='227'}
-pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='White', pedage_grp='30-39', ped_age='35', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='228'}
-pedInjure{ped_pos='Travel Lane', ped_race='Asian', pedage_grp='30-39', ped_age='35', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='229'}
-pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='40-49', ped_age='43', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='230'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='231'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='232'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='233'}
-pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='60-69', ped_age='65', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='234'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='40-49', ped_age='41', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='235'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='60-69', ped_age='64', ped_injury='A: Disabling Injury', ped_sex='Male', pedCrashId='236'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='39', ped_injury='K: Killed', ped_sex='Female', pedCrashId='237'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='A: Disabling Injury', ped_sex='Male', pedCrashId='238'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='239'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='68', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='240'}
-pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='40-49', ped_age='40', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='241'}
-pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='242'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='243'}
-pedInjure{ped_pos='Driveway / Alley', ped_race='Black', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', pedCrashId='244'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='30-39', ped_age='34', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='245'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='25-29', ped_age='27', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='246'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='40-49', ped_age='42', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='247'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='248'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='60-69', ped_age='Unknown', ped_injury='A: Disabling Injury', ped_sex='Female', pedCrashId='249'}
-pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Unknown/Missing', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='250'}
-pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='12', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='251'}
-pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='252'}
-pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='B: Evident Injury', ped_sex='Male', pedCrashId='253'}
-pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='40-49', ped_age='41', ped_injury='B: Evident Injury', ped_sex='Female', pedCrashId='254'}
-pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='C: Possible Injury', ped_sex='Male', pedCrashId='255'}
+ PedCrashID,ped_pos, ped_race,  pedage_grp,  ped_age,  ped_injury,  ped_sex
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='1'}
+pedInjure{ped_pos='Intersection Proper', ped_race='White', pedage_grp='30-39', ped_age='34', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='2'}
+pedInjure{ped_pos='Intersection Proper', ped_race='White', pedage_grp='60-69', ped_age='61', ped_injury='O: No Injury', ped_sex='Male', PedCrashID='3'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='4'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='5'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='3', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='6'}
+pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='7'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='49', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='8'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='23', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='9'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='10'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='16', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='11'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='60-69', ped_age='60', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='12'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='13'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='46', ped_injury='A: Disabling Injury', ped_sex='Male', PedCrashID='14'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='64', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='15'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='40-49', ped_age='46', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='16'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='36', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='17'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='22', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='18'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='60', ped_injury='K: Killed', ped_sex='Female', PedCrashID='19'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='20'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='21'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='17', ped_injury='O: No Injury', ped_sex='Male', PedCrashID='22'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='46', ped_injury='A: Disabling Injury', ped_sex='Male', PedCrashID='23'}
+pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='24'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='25'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='60-69', ped_age='60', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='26'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='60-69', ped_age='68', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='27'}
+pedInjure{ped_pos='Other / Unknown', ped_race='Black', pedage_grp='30-39', ped_age='34', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='28'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Hispanic', pedage_grp='0-19', ped_age='4', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='29'}
+pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='30-39', ped_age='37', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='30'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='13', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='31'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='25-29', ped_age='28', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='32'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='45', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='33'}
+pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='O: No Injury', ped_sex='Male', PedCrashID='34'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='35'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='45', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='36'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='37'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='38'}
+pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='30-39', ped_age='39', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='39'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='25-29', ped_age='25', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='40'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='O: No Injury', ped_sex='Female', PedCrashID='41'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='46', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='42'}
+pedInjure{ped_pos='Other / Unknown', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='43'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='30', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='44'}
+pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='White', pedage_grp='0-19', ped_age='22', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='45'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='40-49', ped_age='45', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='46'}
+pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='White', pedage_grp='0-19', ped_age='23', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='47'}
+pedInjure{ped_pos='Driveway / Alley', ped_race='Asian', pedage_grp='0-19', ped_age='2', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='48'}
+pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='Black', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='49'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='19', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='50'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='64', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='51'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='25-29', ped_age='27', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='52'}
+pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='60-69', ped_age='0', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='53'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='22', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='54'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='49', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='55'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='56'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='57'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='47', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='58'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='59'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='O: No Injury', ped_sex='Male', PedCrashID='60'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='40', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='61'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='62'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='O: No Injury', ped_sex='Male', PedCrashID='63'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='65', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='64'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='30-39', ped_age='33', ped_injury='K: Killed', ped_sex='Female', PedCrashID='65'}
+pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='66'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='18', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='67'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='37', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='68'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='51', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='69'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='70'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='57', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='71'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='72'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='7', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='73'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='74'}
+pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='Black', pedage_grp='25-29', ped_age='26', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='75'}
+pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='50-59', ped_age='52', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='76'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='7', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='77'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='Unknown', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='78'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='40-49', ped_age='47', ped_injury='O: No Injury', ped_sex='Male', PedCrashID='79'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='57', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='80'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='43', ped_injury='K: Killed', ped_sex='Female', PedCrashID='81'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='25-29', ped_age='25', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='82'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='17', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='83'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='84'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='85'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='86'}
+pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='40-49', ped_age='45', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='87'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='39', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='88'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Unknown/Missing', pedage_grp='30-39', ped_age='30', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='89'}
+pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='White', pedage_grp='60-69', ped_age='66', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='90'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='40-49', ped_age='41', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='91'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='27', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='92'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Hispanic', pedage_grp='40-49', ped_age='43', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='93'}
+pedInjure{ped_pos='Travel Lane', ped_race='Unknown/Missing', pedage_grp='60-69', ped_age='Unknown', ped_injury='C: Possible Injury', ped_sex='Unknown', PedCrashID='94'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='0-19', ped_age='23', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='95'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='22', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='96'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='97'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='98'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='40', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='99'}
+pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='White', pedage_grp='40-49', ped_age='40', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='100'}
+pedInjure{ped_pos='Other / Unknown', ped_race='Black', pedage_grp='60-69', ped_age='Unknown', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='101'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='68', ped_injury='O: No Injury', ped_sex='Male', PedCrashID='102'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='103'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='37', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='104'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='105'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='106'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='107'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='108'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='109'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='110'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='13', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='111'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='50-59', ped_age='52', ped_injury='A: Disabling Injury', ped_sex='Male', PedCrashID='112'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='7', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='113'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='114'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='115'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='116'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='117'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='42', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='118'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='40-49', ped_age='41', ped_injury='K: Killed', ped_sex='Female', PedCrashID='119'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Asian', pedage_grp='30-39', ped_age='36', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='120'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='121'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='0', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='122'}
+pedInjure{ped_pos='Travel Lane', ped_race='Asian', pedage_grp='0-19', ped_age='22', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='123'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='124'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='50', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='125'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Hispanic', pedage_grp='30-39', ped_age='37', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='126'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='127'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='23', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='128'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='47', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='129'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='6', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='130'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='30-39', ped_age='35', ped_injury='O: No Injury', ped_sex='Male', PedCrashID='131'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='60-69', ped_age='0', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='132'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='19', ped_injury='K: Killed', ped_sex='Male', PedCrashID='133'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='56', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='134'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='11', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='135'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='136'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='40-49', ped_age='44', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='137'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='15', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='138'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='139'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='A: Disabling Injury', ped_sex='Male', PedCrashID='140'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Other', pedage_grp='30-39', ped_age='30', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='141'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='36', ped_injury='O: No Injury', ped_sex='Female', PedCrashID='142'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='30-39', ped_age='35', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='143'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Asian', pedage_grp='40-49', ped_age='47', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='144'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='Unknown Injury', ped_sex='Male', PedCrashID='145'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='56', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='146'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='57', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='147'}
+pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='60-69', ped_age='Unknown', ped_injury='Unknown Injury', ped_sex='Female', PedCrashID='148'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='0-19', ped_age='23', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='149'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='50', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='150'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='151'}
+pedInjure{ped_pos='Travel Lane', ped_race='Asian', pedage_grp='30-39', ped_age='33', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='152'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='44', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='153'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='K: Killed', ped_sex='Female', PedCrashID='154'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='40-49', ped_age='43', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='155'}
+pedInjure{ped_pos='Travel Lane', ped_race='Asian', pedage_grp='30-39', ped_age='39', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='156'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Other', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='157'}
+pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='0-19', ped_age='11', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='158'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='159'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='160'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='32', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='161'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='162'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='46', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='163'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='164'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='50-59', ped_age='51', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='165'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='38', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='166'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='60-69', ped_age='62', ped_injury='O: No Injury', ped_sex='Female', PedCrashID='167'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='40-49', ped_age='41', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='168'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='31', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='169'}
+pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='170'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='171'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='15', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='172'}
+pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='Black', pedage_grp='60-69', ped_age='62', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='173'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='174'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='175'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='40-49', ped_age='47', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='176'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='29', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='177'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='40', ped_injury='A: Disabling Injury', ped_sex='Male', PedCrashID='178'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='179'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='35', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='180'}
+pedInjure{ped_pos='Intersection Proper', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='181'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='56', ped_injury='O: No Injury', ped_sex='Male', PedCrashID='182'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='40-49', ped_age='45', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='183'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Asian', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='184'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='0-19', ped_age='19', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='185'}
+pedInjure{ped_pos='Intersection Proper', ped_race='White', pedage_grp='0-19', ped_age='15', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='186'}
+pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='50-59', ped_age='50', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='187'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='188'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='189'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='50-59', ped_age='50', ped_injury='O: No Injury', ped_sex='Female', PedCrashID='190'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='23', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='191'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='60-69', ped_age='62', ped_injury='K: Killed', ped_sex='Male', PedCrashID='192'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='38', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='193'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='194'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='30-39', ped_age='38', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='195'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='196'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='197'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='30-39', ped_age='30', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='198'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='40-49', ped_age='48', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='199'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Native American', pedage_grp='50-59', ped_age='56', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='200'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='30-39', ped_age='31', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='201'}
+pedInjure{ped_pos='Driveway / Alley', ped_race='Black', pedage_grp='40-49', ped_age='45', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='202'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='0-19', ped_age='23', ped_injury='Unknown Injury', ped_sex='Male', PedCrashID='203'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Hispanic', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='204'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='40-49', ped_age='45', ped_injury='Unknown Injury', ped_sex='Male', PedCrashID='205'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='206'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='37', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='207'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='7', ped_injury='A: Disabling Injury', ped_sex='Male', PedCrashID='208'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='40-49', ped_age='45', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='209'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Native American', pedage_grp='0-19', ped_age='21', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='210'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='211'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='0-19', ped_age='6', ped_injury='O: No Injury', ped_sex='Female', PedCrashID='212'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Hispanic', pedage_grp='0-19', ped_age='18', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='213'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='40-49', ped_age='47', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='214'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='25', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='215'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='216'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='50-59', ped_age='55', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='217'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='218'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='39', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='219'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='50-59', ped_age='53', ped_injury='K: Killed', ped_sex='Male', PedCrashID='220'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='30-39', ped_age='30', ped_injury='K: Killed', ped_sex='Male', PedCrashID='221'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Hispanic', pedage_grp='0-19', ped_age='1', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='222'}
+pedInjure{ped_pos='Intersection Proper', ped_race='Black', pedage_grp='40-49', ped_age='43', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='223'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='224'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='225'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='25-29', ped_age='25', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='226'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='14', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='227'}
+pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='White', pedage_grp='30-39', ped_age='35', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='228'}
+pedInjure{ped_pos='Travel Lane', ped_race='Asian', pedage_grp='30-39', ped_age='35', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='229'}
+pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='40-49', ped_age='43', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='230'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='25-29', ped_age='26', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='231'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='25-29', ped_age='29', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='232'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='233'}
+pedInjure{ped_pos='Paved Shoulder / Bike Lane / Parking Lane', ped_race='Black', pedage_grp='60-69', ped_age='65', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='234'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Black', pedage_grp='40-49', ped_age='41', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='235'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Black', pedage_grp='60-69', ped_age='64', ped_injury='A: Disabling Injury', ped_sex='Male', PedCrashID='236'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='30-39', ped_age='39', ped_injury='K: Killed', ped_sex='Female', PedCrashID='237'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='70+', ped_injury='A: Disabling Injury', ped_sex='Male', PedCrashID='238'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='21', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='239'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='60-69', ped_age='68', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='240'}
+pedInjure{ped_pos='Travel Lane', ped_race='Hispanic', pedage_grp='40-49', ped_age='40', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='241'}
+pedInjure{ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', ped_race='Black', pedage_grp='25-29', ped_age='28', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='242'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='19', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='243'}
+pedInjure{ped_pos='Driveway / Alley', ped_race='Black', pedage_grp='0-19', ped_age='20', ped_injury='C: Possible Injury', ped_sex='Female', PedCrashID='244'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='30-39', ped_age='34', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='245'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='25-29', ped_age='27', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='246'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='White', pedage_grp='40-49', ped_age='42', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='247'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='248'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='Asian', pedage_grp='60-69', ped_age='Unknown', ped_injury='A: Disabling Injury', ped_sex='Female', PedCrashID='249'}
+pedInjure{ped_pos='Non-Roadway - Parking Lot / Other', ped_race='Unknown/Missing', pedage_grp='60-69', ped_age='70+', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='250'}
+pedInjure{ped_pos='Travel Lane', ped_race='White', pedage_grp='0-19', ped_age='12', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='251'}
+pedInjure{ped_pos='Travel Lane', ped_race='Black', pedage_grp='0-19', ped_age='18', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='252'}
+pedInjure{ped_pos='Crosswalk Area', ped_race='White', pedage_grp='0-19', ped_age='20', ped_injury='B: Evident Injury', ped_sex='Male', PedCrashID='253'}
+pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='40-49', ped_age='41', ped_injury='B: Evident Injury', ped_sex='Female', PedCrashID='254'}
+pedInjure{ped_pos='Driveway / Alley', ped_race='White', pedage_grp='0-19', ped_age='24', ped_injury='C: Possible Injury', ped_sex='Male', PedCrashID='255'}
 pedInjur

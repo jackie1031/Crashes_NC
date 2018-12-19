@@ -7,14 +7,14 @@ public class PedInjure{
 	public String ped_age;
 	public String ped_injury;
 	public String ped_sex;
-	public int pedCrashId;
+	public int PedCrashID;
 
 
 	public PedInjure(){}
 
 	public PedInjure(String ped_pos, String ped_race, String pedage_grp, String ped_age, 
-		String ped_injury, String ped_sex, int pedCrashId) {
-		this.pedCrashId = pedCrashId;
+		String ped_injury, String ped_sex, int PedCrashID) {
+		this.PedCrashID = PedCrashID;
 		this.ped_pos = ped_pos;
 		this.ped_race = ped_race;
 		this.pedage_grp = pedage_grp;
@@ -26,13 +26,13 @@ public class PedInjure{
 
 	public String toSqlStatement() {
 		
-		return "INSERT INTO PedInjure(pedCrashId,ped_pos,ped_race,pedage_grp,ped_age,ped_injury,ped_sex) VALUES (" 
-				 + this.pedCrashId + ", '" + this.ped_pos + "','" + this.ped_race + "','" + pedage_grp + "','" + this.ped_age + "','"
+		return "INSERT INTO PedInjure(PedCrashID,ped_pos,ped_race,pedage_grp,ped_age,ped_injury,ped_sex) VALUES (" 
+				 + this.PedCrashID + ", '" + this.ped_pos + "','" + this.ped_race + "','" + pedage_grp + "','" + this.ped_age + "','"
 				+ this.ped_injury + "','" + this.ped_sex + "');";
 	}
 	
 	public boolean containsError() {
-		if (this.pedCrashId == -1) {
+		if (this.PedCrashID == -1) {
 			return true;
 		}
 		if (this.ped_age.equals("error") || this.ped_sex.equals("error")) {
@@ -51,7 +51,7 @@ public class PedInjure{
 				", ped_age='" + ped_age + '\'' +
 				", ped_injury='" + ped_injury + '\'' +
 				", ped_sex='" + ped_sex + '\'' +
-				", pedCrashId='" + pedCrashId + '\'' +
+				", PedCrashID='" + PedCrashID + '\'' +
 				'}';
 	}
 }
