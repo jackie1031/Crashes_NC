@@ -1,0 +1,251 @@
+ PedCrashID,crashalcoh,excsspdind,ped_pos,drvr_injur,hit_run,drvr_estsp,exceedSpeed, speed_limi
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=1, exceedSpeed=-1, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Intersection Proper', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=2, exceedSpeed=-1, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Intersection Proper', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=3, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=4, exceedSpeed=-1, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='36-40 mph', PedCrashID=5, exceedSpeed=-5, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=6, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Paved Shoulder / Bike Lane / Parking Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=7, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=8, exceedSpeed=-5, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=9, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=10, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='21-25 mph', PedCrashID=11, exceedSpeed=0, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=12, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='6-10 mph', PedCrashID=13, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=14, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=15, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=16, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=17, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=18, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='51-55 mph', PedCrashID=19, exceedSpeed=0, speed_limi=50 - 55  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=20, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=21, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='16-20 mph', PedCrashID=22, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=23, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Driveway / Alley', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='Unknown', PedCrashID=24, exceedSpeed=-1, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=25, exceedSpeed=5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=26, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=27, exceedSpeed=-15, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Other / Unknown', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='Unknown', PedCrashID=28, exceedSpeed=-1, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=29, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Paved Shoulder / Bike Lane / Parking Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=30, exceedSpeed=-5, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=31, exceedSpeed=-5, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='6-10 mph', PedCrashID=32, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='21-25 mph', PedCrashID=33, exceedSpeed=0, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='36-40 mph', PedCrashID=34, exceedSpeed=15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=35, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='21-25 mph', PedCrashID=36, exceedSpeed=-10, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=37, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=38, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Paved Shoulder / Bike Lane / Parking Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=39, exceedSpeed=-5, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='21-25 mph', PedCrashID=40, exceedSpeed=-10, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=41, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=42, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Other / Unknown', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='41-45 mph', PedCrashID=43, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='21-25 mph', PedCrashID=44, exceedSpeed=-30, speed_limi=50 - 55  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Paved Shoulder / Bike Lane / Parking Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=45, exceedSpeed=-1, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=46, exceedSpeed=-1, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=47, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Driveway / Alley', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=48, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=49, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=50, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=51, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=52, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=53, exceedSpeed=-25, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=54, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=55, exceedSpeed=5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=56, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=57, exceedSpeed=-25, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=58, exceedSpeed=-1, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='6-10 mph', PedCrashID=59, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=60, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=61, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=62, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=63, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='Yes', drvr_estsp='21-25 mph', PedCrashID=64, exceedSpeed=0, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=65, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Driveway / Alley', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=66, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='31-35 mph', PedCrashID=67, exceedSpeed=10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=68, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=69, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=70, exceedSpeed=-25, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='11-15 mph', PedCrashID=71, exceedSpeed=-30, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=72, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=73, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=74, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=75, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Paved Shoulder / Bike Lane / Parking Lane', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='31-35 mph', PedCrashID=76, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=77, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=78, exceedSpeed=-25, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=79, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='36-40 mph', PedCrashID=80, exceedSpeed=5, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='46-50 mph', PedCrashID=81, exceedSpeed=5, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=82, exceedSpeed=-15, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=83, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=84, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=85, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=86, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Paved Shoulder / Bike Lane / Parking Lane', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='41-45 mph', PedCrashID=87, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=88, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=89, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Paved Shoulder / Bike Lane / Parking Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=90, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=91, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=92, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=93, exceedSpeed=-40, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=94, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=95, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=96, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=97, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=98, exceedSpeed=-25, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='C: Possible Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=99, exceedSpeed=5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=100, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Other / Unknown', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='6-10 mph', PedCrashID=101, exceedSpeed=-25, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=102, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=103, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=104, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=105, exceedSpeed=-1, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=106, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=107, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=108, exceedSpeed=-15, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=109, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=110, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=111, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='B: Evident Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=112, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=113, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=114, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=115, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='21-25 mph', PedCrashID=116, exceedSpeed=0, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=117, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=118, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=119, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=120, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=121, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=122, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=123, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=124, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='36-40 mph', PedCrashID=125, exceedSpeed=-5, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=126, exceedSpeed=-30, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=127, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=128, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='31-35 mph', PedCrashID=129, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=130, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=131, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=132, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=133, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='C: Possible Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=134, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=135, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=136, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=137, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=138, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=139, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=140, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=141, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=142, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=143, exceedSpeed=-20, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=144, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=145, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=146, exceedSpeed=-40, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=147, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='36-40 mph', PedCrashID=148, exceedSpeed=5, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='16-20 mph', PedCrashID=149, exceedSpeed=-15, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=150, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=151, exceedSpeed=-15, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=152, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=153, exceedSpeed=-10, speed_limi=50 - 55  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=154, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=155, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=156, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=157, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Driveway / Alley', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=158, exceedSpeed=0, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=159, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='Unknown', PedCrashID=160, exceedSpeed=-1, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='Unknown', PedCrashID=161, exceedSpeed=-1, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='6-10 mph', PedCrashID=162, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=163, exceedSpeed=-20, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=164, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='Yes', drvr_estsp='11-15 mph', PedCrashID=165, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=166, exceedSpeed=-10, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=167, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=168, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=169, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='56-60 mph', PedCrashID=170, exceedSpeed=5, speed_limi=50 - 55  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=171, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=172, exceedSpeed=-30, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='31-35 mph', PedCrashID=173, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=174, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=175, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=176, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=177, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=178, exceedSpeed=5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=179, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=180, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Intersection Proper', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=181, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=182, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='16-20 mph', PedCrashID=183, exceedSpeed=-15, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=184, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=185, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Intersection Proper', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=186, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Driveway / Alley', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=187, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=188, exceedSpeed=-35, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=189, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=190, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=191, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=192, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=193, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=194, exceedSpeed=0, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=195, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=196, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=197, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=198, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=199, exceedSpeed=-10, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='6-10 mph', PedCrashID=200, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=201, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Driveway / Alley', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=202, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=203, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=204, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=205, exceedSpeed=0, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=206, exceedSpeed=-25, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=207, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='21-25 mph', PedCrashID=208, exceedSpeed=0, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=209, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='41-45 mph', PedCrashID=210, exceedSpeed=10, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=211, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=212, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='16-20 mph', PedCrashID=213, exceedSpeed=-15, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=214, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=215, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=216, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=217, exceedSpeed=-25, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=218, exceedSpeed=-15, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='Yes', drvr_estsp='Unknown', PedCrashID=219, exceedSpeed=-1, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=220, exceedSpeed=-10, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='Yes', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='51-55 mph', PedCrashID=221, exceedSpeed=10, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=222, exceedSpeed=-5, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Intersection Proper', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=223, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=224, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='0-5 mph', PedCrashID=225, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=226, exceedSpeed=-20, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='21-25 mph', PedCrashID=227, exceedSpeed=-10, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='6-10 mph', PedCrashID=228, exceedSpeed=-15, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=229, exceedSpeed=-5, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='21-25 mph', PedCrashID=230, exceedSpeed=-10, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='Unknown Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=231, exceedSpeed=-1, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='6-10 mph', PedCrashID=232, exceedSpeed=-25, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=233, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Paved Shoulder / Bike Lane / Parking Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=234, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=235, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=236, exceedSpeed=-5, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=237, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='41-45 mph', PedCrashID=238, exceedSpeed=0, speed_limi=40 - 45  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=239, exceedSpeed=-10, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='Yes', drvr_estsp='11-15 mph', PedCrashID=240, exceedSpeed=-20, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=241, exceedSpeed=-30, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Sidewalk / Shared Use Path / Driveway Crossing', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=242, exceedSpeed=-10, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='16-20 mph', PedCrashID=243, exceedSpeed=-5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Driveway / Alley', drvr_injur='Unknown Injury', hit_run='Yes', drvr_estsp='11-15 mph', PedCrashID=244, exceedSpeed=0, speed_limi=5 - 15 MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='31-35 mph', PedCrashID=245, exceedSpeed=0, speed_limi=30 - 35  MPH}
+ReasonPed{crashalcoh='Yes', excsspdind='No', ped_pos='Travel Lane', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='0-5 mph', PedCrashID=246, exceedSpeed=-20, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-Roadway - Parking Lot / Other', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='11-15 mph', PedCrashID=247, exceedSpeed=-1, speed_limi=Unknown}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='O: No Injury', hit_run='No', drvr_estsp='26-30 mph', PedCrashID=248, exceedSpeed=5, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Crosswalk Area', drvr_injur='A: Disabling Injury', hit_run='No', drvr_estsp='Unknown', PedCrashID=249, exceedSpeed=-1, speed_limi=20 - 25  MPH}
+ReasonPed{crashalcoh='No', excsspdind='No', ped_pos='Non-
