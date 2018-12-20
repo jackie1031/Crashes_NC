@@ -30,18 +30,18 @@ public class PedInjParser {
 		tupleSeparator(tupleList, inFile, outFile);
 		sqlWriter.write("Drop TABLE IF EXISTS PedInjure;\n");
 		sqlWriter.write("CREATE TABLE PedInjure(\n");
-		sqlWriter.write("pedCrashId INTEGER NOT NULL \n");
+		sqlWriter.write("PedCrashID INTEGER NOT NULL \n");
 		sqlWriter.write("    ,ped_pos      VARCHAR(46) NOT NULL\n");
 		sqlWriter.write("    ,ped_race     VARCHAR(15) NOT NULL\n");
 		sqlWriter.write("    ,pedage_grp   VARCHAR(7) NOT NULL\n");
 		sqlWriter.write("    ,ped_age      VARCHAR(7) NOT NULL\n");
 		sqlWriter.write("    ,ped_injury   VARCHAR(19) NOT NULL \n");
 		sqlWriter.write("    ,ped_sex      VARCHAR(7) NOT NULL\n");
-		sqlWriter.write("   ,PRIMARY KEY(pedCrashId)\n");
+		sqlWriter.write("   ,PRIMARY KEY(PedCrashID)\n");
 		sqlWriter.write(");\n");
 
-		writer.write(" pedCrashId,ped_pos, ped_race,  pedage_grp,  ped_age,  ped_injury,  ped_sex\n");
-		errorWriter.write(" pedCrashId,ped_pos,  ped_race,  pedage_grp,  ped_age,  ped_injury,  ped_sex\n");
+		writer.write(" PedCrashID,ped_pos, ped_race,  pedage_grp,  ped_age,  ped_injury,  ped_sex\n");
+		errorWriter.write(" PedCrashID,ped_pos,  ped_race,  pedage_grp,  ped_age,  ped_injury,  ped_sex\n");
 
 
 		//Write the result in a csv file
@@ -49,14 +49,14 @@ public class PedInjParser {
 			PedInjure oneEntry = tupleList.get(i);
 			// if (!oneEntry.containsError() && isNumeric(oneEntry.year)) {
 			if (!oneEntry.containsError()) {
-				String key = oneEntry.pedCrashId + "";
+				String key = oneEntry.PedCrashID + "";
 				if (!pedInjure.contains(key)) {
 					pedInjure.add(key);
 					writer.write(oneEntry.toString() + "\n");
 					sqlWriter.write(oneEntry.toSqlStatement() + "\n");
 				}
 			} else {
-				String key = oneEntry.pedCrashId + "";
+				String key = oneEntry.PedCrashID + "";
 				if (!errorpedInjure.contains(key)) {
 					errorpedInjure.add(key);
 					errorWriter.write(oneEntry.toString() + "\n");
@@ -105,7 +105,7 @@ public class PedInjParser {
 			pedInjureAdd.ped_age = data.get(pedAgeInd).trim();
 			pedInjureAdd.ped_injury = data.get(pedInjuInd);
 			pedInjureAdd.ped_sex = data.get(pedSexInd);
-			pedInjureAdd.pedCrashId = crashId;
+			pedInjureAdd.PedCrashID = crashId;
 
 			System.out.println("ped_age is: "+ data.get(pedAgeInd));
 			System.out.println("ped_race is: "+ data.get(pedRaceInd));
@@ -146,7 +146,7 @@ public class PedInjParser {
 			pedInjureAdd.pedage_grp = ageGroup;
 			tupleList.add(pedInjureAdd);
 			//System.out.println("the pedinjure add is: " + pedInjureAdd.toString());
-			System.out.println("the crash id is: " + pedInjureAdd.pedCrashId);
+			System.out.println("the crash id is: " + pedInjureAdd.PedCrashID);
 
 			crashId += 1;
 		}
