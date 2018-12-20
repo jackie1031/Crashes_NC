@@ -114,23 +114,26 @@ public class PedInjParser {
 			// System.out.println("the line : " + data);
 
 			String ageStr = data.get(pedAgeInd);
-			String ageGroup;
+			String ageGroup = "";
 			double ageDouble = 0.0;
 
 			if (ageStr.equals("Unknown") || ageStr.equals("0")) {
-				ageGroup = null;
+				ageGroup = "Unknown";
 			} else if (ageStr.equals("70+")) {
 				ageGroup = "70+";
-				//System.out.println("got here "+ ageGroup);
+				System.out.println("got here "+ ageGroup);
 			} else {
 				ageDouble = Double.parseDouble(ageStr);
-
 			}
 
-			if (isBetween(ageDouble, 1, 19)) {
-				ageGroup = "0-19";
-			} else if (isBetween(ageDouble, 20, 24)) {
-				ageGroup = "0-19";
+			if (isBetween(ageDouble, 1, 10)) {
+				ageGroup = "6-10";
+			} else if (isBetween(ageDouble, 11, 15)) {
+				ageGroup = "11-15";
+			}else if (isBetween(ageDouble, 16, 19)) {
+				ageGroup = "16-19";
+			}else if (isBetween(ageDouble, 20, 24)) {
+				ageGroup = "20-24";
 			}else if (isBetween(ageDouble, 25, 29)) {
 				ageGroup = "25-29";
 			}else if (isBetween(ageDouble, 30, 39)) {
@@ -139,7 +142,7 @@ public class PedInjParser {
 				ageGroup = "40-49";
 			}else if (isBetween(ageDouble, 50, 59)) {
 				ageGroup = "50-59";
-			}else {
+			}else if (isBetween(ageDouble, 60, 69)) {
 				ageGroup = "60-69";
 			}
 
