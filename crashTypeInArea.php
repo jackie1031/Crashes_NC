@@ -29,7 +29,7 @@
 			while ($myrow = mysql_fetch_array($result_types)) {
 				printf("<tr><td>%s</td><td>%s</td></tr>\n", $myrow["Ped_crashtype"], $myrow["Bike_crashtype"]);
 			}
-			echo "</table?\n";
+			echo "</table>\n";
 		}
 
 		$result_ped = mysql_query("CALL CrashTypeRate_Ped(\"$city\")", $conn);
@@ -42,7 +42,7 @@
 			while ($myrow = mysql_fetch_array($result_ped)) {
 				printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["crash_type"], $myrow["type_count"], $myrow["total_count"]);
 			}
-			echo "</table?\n";
+			echo "</table>\n";
 		}
 
 		$result_bike = mysql_query("CALL CrashTypeRate_Bike(\"$city\")", $conn);
@@ -55,7 +55,7 @@
 			while ($myrow = mysql_fetch_array($result_bike)) {
 				printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["crash_type"], $myrow["type_count"], $myrow["total_count"]);
 			}
-			echo "</table?\n";
+			echo "</table>\n";
 		}
 
 		mysql_close();
