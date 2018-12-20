@@ -68,21 +68,21 @@ BEGIN
 	SELECT COUNT(*) FROM BikeCrashType INTO Bcnt;
 
 	IF (Pcnt >= Bcnt) THEN
-		SET dif=Pcnt-Bcnt;
-		SET i=Bcnt+1;
-		WHILE i<=Pcnt DO
-		SELECT Ped_crashtype FROM PedCrashType WHERE id=i INTO Pval;
-		INSERT INTO CrashType(Ped_crashtype, Bike_crashtype) VALUES (Pval, '');
-		SET i=i+1;
-		END WHILE;
+	SET dif=Pcnt-Bcnt;
+	SET i=Bcnt+1;
+	WHILE i<=Pcnt DO
+	SELECT Ped_crashtype FROM PedCrashType WHERE id=i INTO Pval;
+	INSERT INTO CrashType(Ped_crashtype, Bike_crashtype) VALUES (Pval, '');
+	SET i=i+1;
+	END WHILE;
 	ELSE
-		SET dif=Bcnt-Pcnt;
-		SET i=Pcnt+1;
-		WHILE i<=Bcnt DO
-		SELECT Bike_crashtype FROM BikeCrashType WHERE id=i INTO Bval;
-		INSERT INTO CrashType(Ped_crashtype, Bike_crashtype) VALUES ('', Bval);
-		SET i=i+1;
-		END WHILE;
+	SET dif=Bcnt-Pcnt;
+	SET i=Pcnt+1;
+	WHILE i<=Bcnt DO
+	SELECT Bike_crashtype FROM BikeCrashType WHERE id=i INTO Bval;
+	INSERT INTO CrashType(Ped_crashtype, Bike_crashtype) VALUES ('', Bval);
+	SET i=i+1;
+	END WHILE;
 	END IF;
 	
 	SELECT * FROM CrashType;
