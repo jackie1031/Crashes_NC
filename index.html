@@ -48,6 +48,8 @@
 		  <input type="submit">
 		</form>
 
+		<h3>2.Here you can enter a time range(from 0 to 24) to see which area has higher accident rate, ambulance response rate, and hit and run rate. </h3>
+		<p>Please enter the time range (only positive integers allowed):</p>
 
 		<form action="timeRangeAnalysis.php" method="post">
 			Enter time from: <input type="number" name="time_f" min="0" max="24"><br>
@@ -55,10 +57,51 @@
 		<input type="submit">
 		</form>
 
- 		<form action="all_rawscores.php" method="post">
-		part c) Password: <input type="text" name="PASSWORD"><br>
-		<input type="submit">
+		<h3>3. Select a condition(weather, light condition, etc.) and see how it correlates with pedestrian and bike crashes.</p>
+		<p>Please select city name from this drop-down list:</p>
+		<form action="condition.php">
+		  <select name="condition">
+		    <option value="light">light condition</option>
+		    <option value="roadSurface">road surface</option>
+		    <option value="weather">weather</option>
+		    <option value="speedLimit">exceed speed limit</option>
+		    <option value="alsohol">detected alcohol in driver</option>
+		  </select>
+		  <br><br>
+		  <input type="submit">
 		</form>
+
+		<h3>4. For a selected age group, show all crashes data for the victim. </p>
+		<p>Please select city name from this drop-down list:</p>
+		<form action="ageGroup.php">
+		  <select name="age">
+		    <option value="light">light condition</option>
+		    <option value="roadSurface">road surface</option>
+		    <option value="weather">weather</option>
+		    <option value="speedLimit">exceed speed limit</option>
+		    <option value="alsohol">detected alcohol in driver</option>
+		  </select>
+		  <br><br>
+		  <input type="submit">
+		</form>
+
+select distinct bikeage_gr from BikeCrash;
++------------+
+| bikeage_gr |
++------------+
+| 70+        |
+| 40-49      |
+| 20-24      |
+| 30-39      |
+| 50-59      |
+| 25-29      |
+| Unknown    |
+| 11-15      |
+| 60-69      |
+| 16-19      |
+| 6-10       |
++------------+
+11 rows in set (0.04 sec)
 
 		<form action="all_percentages.php" method="post">
 		pard d) Password: <input type="text" name="PASSWORD"><br>
