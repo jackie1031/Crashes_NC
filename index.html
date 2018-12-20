@@ -1,0 +1,77 @@
+<!doctype html>
+<!-- <html>
+	<head>
+		<meta charset="utf-8">
+		<title>600.315 Final ycao29 tlin44 </title>
+
+	</head>
+	
+	<body>
+		<h2>600.315 Final Project -- Bike and Pedestrian Crash analysis for Chapel Hill, NC</h2>
+		<h4>By Tianyi Lin (tlin44), Yang Cao (ycao29)</h4>
+		<br>
+		<br>
+		1. <a href="http://ugrad.cs.jhu.edu/~jchoi100/AverageByDecade.html">Click here to view the average size of an artwork for a specific nation.</a>
+		<br>
+		2. <a href="http://ugrad.cs.jhu.edu/~jchoi100/CompareSizeByNationDecade.html">Click here to see the comparison of artwork size of two nations.</a>
+		<br>
+		3. <a href="http://ugrad.cs.jhu.edu/~jchoi100/GoldenRatioTable.php">Click here to see how many paintings have the golden ratio by nation.</a>
+
+
+		<p>Also, the links direct to jchoi100's ugrad dbase html and php files. The ones present in the project directory available at GitHub are just for your reference.</p>
+	</body>
+
+</html> -->
+
+<html>
+	<head>
+		<title>Final Project - Tianyi Lin, Yang Cao</title>
+	</head>
+
+	<body>
+		<h2>600.315 Final Project -- Bike and Pedestrian Crash analysis for Chapel Hill, NC</h2>
+		<h4>By Tianyi Lin (tlin44), Yang Cao (ycao29)</h4>
+		<br>
+		<br>
+
+		<h3>1. What kind of crash type (pedestrian AND bike) is the most frequent (top 5) in your city? </h3>
+		<p>Please select city name from this drop-down list:</p>
+
+		<form action="crashTypeInArea.php">
+		  <select name="city">
+		    <option value="chapelHill">Chapel Hill</option>
+		    <option value="durham">Durham</option>
+		    <option value="carrboro">Carrboro</option>
+		    <option value="none">None - Rural Crash</option>
+		  </select>
+		  <br><br>
+		  <input type="submit">
+		</form>
+
+
+		<form action="timeRangeAnalysis.php" method="post">
+			Enter time from: <input type="number" name="time_f" min="0" max="24"><br>
+			Enter time to: <input type="number" name="time_to" min = "0" max="24"><br>
+		<input type="submit">
+		</form>
+
+ 		<form action="all_rawscores.php" method="post">
+		part c) Password: <input type="text" name="PASSWORD"><br>
+		<input type="submit">
+		</form>
+
+		<form action="all_percentages.php" method="post">
+		pard d) Password: <input type="text" name="PASSWORD"><br>
+		<input type="submit">
+		</form> 
+
+		<form action="update_score.php" method="post">
+		part g) Password: <input type="text" name="PASSWORD"><br>
+		SSN: <input type="text" name="SSN"><br>
+		AssignmentName: <input type="text" name="AssignmentName"><br>
+		NewScore: <input type="text" name="NewScore"><br>
+		<input type="submit">
+		</form> 
+
+	</body>
+</html>
