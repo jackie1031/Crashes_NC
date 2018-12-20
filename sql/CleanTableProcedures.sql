@@ -15,7 +15,7 @@ BEGIN
 
   DROP TABLE IF EXISTS BikeCrashRdCond;
   CREATE TABLE BikeCrashRdCond AS
-  SELECT BikeCrashID, rd_defects, rd_feature, rd_charact, rd_surface, rd_conditi, speed_limi, traff_cntr, weather, rd_config, num_lanes, developmen
+  SELECT BikeCrashID, rd_defects, rd_feature, rd_charact, rd_surface, rd_conditi, speed_limi, traff_cntr, weather, rd_config, num_lanes, developmen, light_cond
   FROM BikeCrash;
 
   DROP TABLE IF EXISTS BikeCrashResult;
@@ -79,7 +79,7 @@ BEGIN
 
   DROP TABLE IF EXISTS DiverBiker_PedCrash;
   CREATE TABLE DiverBiker_PedCrash AS
-  SELECT PedCrashID, drvr_age, drvrage_gr, drvr_estsp, speed_limi, drvr_vehty, drvr_injur, drvr_sex, drvr_race
+  SELECT PedCrashID, drvr_age, drvrage_gr, drvr_estsp, speed_limi, drvr_vehty, drvr_injur, drvr_sex, drvr_race, drvr_alc_d
   FROM PedestrianCrash;
 
   DROP TABLE IF EXISTS PedCrashDetail;
