@@ -17,6 +17,8 @@
 
 		$time_f = $_POST['time_f'];
 		$time_to = $_POST['time_to'];
+		echo "Note: If the table is empty, it means there are no crashes during this time range.\n";
+
 
 		echo "Cities with higher accident rate during entered time:\n";
 		echo "Pedestrian crash:\n";
