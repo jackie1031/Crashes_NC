@@ -120,13 +120,13 @@
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>Hit And Run</td><td>Percentage</td><td>Crash Hour</td><td>Weather</td></tr>\n";
+			echo "<tr><td>Hit And Run</td><td>Percentage</td><td>Weather</td></tr>\n";
 			while ($row = mysqli_fetch_array($result)) {
 				$hit_run = $row['hit_run'];
 			    $percentage = $row['percentage'];
 			    $crash_hour = $row['crash_hour'];
 			    $weather = $row['weather'];
-			    echo "<tr><td>".$hit_run."</td><td>".$percentage."</td><td>".$crash_hour."</td><td>".$weather."</td></tr>";
+			    echo "<tr><td>".$hit_run."</td><td>".$percentage."</td><td>".$weather."</td></tr>";
 			}
 			echo "</table>\n";
 			$result->close();
@@ -140,13 +140,13 @@
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>Hit And Run</td><td>Percentage</td><td>Crash Hour</td><td>Weather</td></tr>\n";
+			echo "<tr><td>Hit And Run</td><td>Percentage</td><td>Weather</td></tr>\n";
 			while ($row = mysqli_fetch_array($result)) {
 				$hit_run = $row['hit_run'];
 			    $percentage = $row['percentage'];
 			    $crash_hour = $row['crash_hour'];
 			    $weather = $row['weather'];
-			    echo "<tr><td>".$hit_run."</td><td>".$percentage."</td><td>".$crash_hour."</td><td>".$weather."</td></tr>";
+			    echo "<tr><td>".$hit_run."</td><td>".$percentage."</td><td>".$weather."</td></tr>";
 			}
 			echo "</table>\n";
 			$result->close();

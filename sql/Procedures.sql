@@ -351,8 +351,8 @@ BEGIN
 	IF (t_to IS NOT NULL) THEN SET time_to=t_to;
 	END IF;
 
-	SELECT Result.hit_run, HitC.hit_count/TotalC.total_count*100 AS percentage, T.crash_hour, R.weather
-	FROM BikeCrashResult AS Result, BikeCrashTime AS T, BikeCrashRdCond AS R,
+	SELECT HitC.hit_run, HitC.hit_count/TotalC.total_count*100 AS percentage, MaxCrashHour.weather
+	FROM
 	(
 	SELECT COUNT(*) as hit_count, hit_run
 	FROM BikeCrashResult, BikeCrashTime
@@ -364,12 +364,21 @@ BEGIN
 	SELECT COUNT(*) as total_count
 	FROM BikeCrashTime
 	WHERE BikeCrashTime.crash_hour>=time_from AND BikeCrashTime.crash_hour<time_to
-	) AS TotalC
-	WHERE Result.BikeCrashID=T.BikeCrashID AND T.BikeCrashID=R.BikeCrashID AND
-	T.crash_hour>=time_from AND T.crash_hour<time_to AND HitC.hit_run=Result.hit_run
+	) AS TotalC,
+	(
+	SELECT COUNT(*) as max_crash_hour, weather, hit_run
+	FROM BikeCrashTime, BikeCrashRdCond, BikeCrashResult
+	WHERE BikeCrashTime.BikeCrashID=BikeCrashRdCond.BikeCrashID AND
+	BikeCrashResult.BikeCrashID=BikeCrashRdCond.BikeCrashID AND
+	BikeCrashTime.crash_hour>=time_from AND BikeCrashTime.crash_hour<time_to
+	GROUP BY weather, hit_run
+	ORDER BY max_crash_hour DESC
+	) MaxCrashHour
+	WHERE HitC.hit_run=MaxCrashHour.hit_run
 	ORDER BY percentage DESC;
 END|
 delimiter ;
+call HitRun_Bike(3, 18);
 
 
 DROP PROCEDURE IF EXISTS HitRun_Ped;
