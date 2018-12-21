@@ -366,13 +366,22 @@ BEGIN
 	WHERE BikeCrashTime.crash_hour>=time_from AND BikeCrashTime.crash_hour<time_to
 	) AS TotalC,
 	(
-	SELECT COUNT(*) as max_crash_hour, weather, hit_run
+	SELECT COUNT(*) as max_crash_hour, hit_run, weather
 	FROM BikeCrashTime, BikeCrashRdCond, BikeCrashResult
 	WHERE BikeCrashTime.BikeCrashID=BikeCrashRdCond.BikeCrashID AND
 	BikeCrashResult.BikeCrashID=BikeCrashRdCond.BikeCrashID AND
 	BikeCrashTime.crash_hour>=time_from AND BikeCrashTime.crash_hour<time_to
-	GROUP BY weather, hit_run
-	ORDER BY max_crash_hour DESC
+	GROUP BY hit_run, weather
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM BikeCrashTime as T, BikeCrashRdCond as R, BikeCrashResult as Result
+	WHERE T.BikeCrashID=R.BikeCrashID AND
+	R.BikeCrashID=Result.BikeCrashID AND
+	T.crash_hour>=time_from AND T.crash_hour<time_to
+	AND Result.hit_run=BikeCrashResult.hit_run
+	GROUP BY hit_run, weather
+	)
 	) MaxCrashHour
 	WHERE HitC.hit_run=MaxCrashHour.hit_run
 	ORDER BY percentage DESC;
