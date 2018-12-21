@@ -15,7 +15,7 @@
 			echo mysqli_connect_error();
 		}
 		
-		echo "Part 1: which type of crash (pedestrian or bike) has higher severity of injury?\n";
+		echo nl2br( "\n Part 1: which type of crash (pedestrian or bike) has higher severity of injury?\n");
 		echo "Pedestrian crash:\n";
 		$result = $db->query("CALL Injury_Ped");
 		if (!$result){

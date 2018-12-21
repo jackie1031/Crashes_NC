@@ -16,8 +16,9 @@
 		}
 
 		$age = $_POST['age'];
-		echo "Note: If the table is empty, it means there are no crashes within this age group.\n";
-		echo "Info about pedestrian crash victims:\n";
+
+		echo nl2br(" \n Note: If the table is empty, it means there are no crashes within this age group.\n");
+		echo nl2br("Info about pedestrian crash victims:\n");
 
 		$result = $db->query("CALL AgeGpAccidentRate_Ped('$age')");
 		if (!$result){
@@ -40,7 +41,7 @@
 		    $db->next_result();
 		}
 
-		echo "Info about bike crash victims:\n";
+		echo nl2br("\n Info about bike crash victims:\n");
 
 		$result = $db->query("CALL AgeGpAccidentRate_Bike('$age')");
 		if (!$result){

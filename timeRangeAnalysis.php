@@ -25,11 +25,12 @@
 		if (empty($time_to)) {
 			$time_to = NULL;
 		}
+		echo nl2br("Note: we list the most frequent factors, but we DO allow for ties in the count, so there'll be multiple rows with the same first 3 columns \n \n ");
 
-		echo "Note: If the table is empty, it means there are no crashes during this time range.\n";
+		echo nl2br("Note: If the table is empty, it means there are no crashes during this time range.\n");
 
 
-		echo "Cities with higher accident rate during entered time:\n";
+		echo nl2br("\n Cities with higher accident rate during entered time:\n");
 		echo "Pedestrian crash:\n";
 		$result = $db->query("CALL AccidentRate_Ped($time_f, $time_to)");
 		if (!$result){
@@ -72,8 +73,8 @@
 		}
 
 
-		echo "Correlation between ambulance response and severity of injury during entered time:\n";
-		echo "Pedestrian crash:\n";
+		echo nl2br("\n Correlation between ambulance response and severity of injury during entered time:\n");
+		echo nl2br("Pedestrian crash:\n");
 		$result = $db->query("CALL AmbulanceSevri_Ped($time_f, $time_to)");
 		if (!$result){
 			echo "Fail to retrieve info for pedestrian crashes!\n";
@@ -112,8 +113,8 @@
 		}
 
 
-		echo "Hit and run rate during entered time:\n";
-		echo "Pedestrian crash:\n";
+		echo nl2br("\n Hit and run rate during entered time:\n");
+		echo nl2br("Pedestrian crash:\n");
 		$result = $db->query("CALL HitRun_Ped($time_f, $time_to)");
 		if (!$result){
 			echo "Fail to retrieve info for pedestrian crashes!\n";
@@ -133,7 +134,7 @@
 		    $db->next_result();
 		}
 
-		echo "Bike crash:\n";
+		echo nl2br("\n Bike crash:\n");
 		$result = $db->query("CALL HitRun_Bike($time_f, $time_to)");
 		if (!$result){
 			echo "Fail to retrieve info for bike crashes!\n";
