@@ -807,7 +807,7 @@ BEGIN
 	FROM PedCrashRdCond AS R, PedCrashDetail AS D
 	WHERE R.PedCrashID=D.PedCrashID AND R.rural_urba=PedCrashRdCond.rural_urba
 	GROUP BY rural_urba, crsh_sevri
-	)
+	)x
 	) AS S
 	WHERE P.rural_urba=A.rural_urba AND P.rural_urba=S.rural_urba;
 END|
