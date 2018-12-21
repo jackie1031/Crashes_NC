@@ -210,7 +210,7 @@
 
 		}
 
-		mysql_close();
+		$db->close();
 	?>
 
 </body>

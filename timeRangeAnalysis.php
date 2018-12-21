@@ -143,6 +143,8 @@
 			$result->close();
 		    $db->next_result();
 		}
+
+		$db->close();
 	?>
 
 </body>
