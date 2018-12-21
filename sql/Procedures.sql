@@ -560,14 +560,14 @@ BEGIN
 	DROP TABLE IF EXISTS InterBike;
 	CREATE TABLE InterBike AS
 	(
-	SELECT crash_loc, crsh_sevri, weather, light_cond, num_lanes
-	FROM BikeCrashLoc AS BL, BikeCrashRdCond AS BR, BikeCrashResult AS R
-	WHERE BL.BikeCrashID=BR.BikeCrashID AND BR.BikeCrashID=R.BikeCrashID
+	SELECT crash_loc, weather, light_cond
+	FROM BikeCrashLoc AS BL, BikeCrashRdCond AS BR
+	WHERE BL.BikeCrashID=BR.BikeCrashID
 	);
 	DROP TABLE IF EXISTS InterPed;
 	CREATE TABLE InterPed AS
 	(
-	SELECT crash_loc, crsh_sevri, weather, light_cond, num_lanes
+	SELECT crash_loc, weather, light_cond
 	FROM PedCrashRdCond AS PR, PedCrashDetail AS PD
 	WHERE PR.PedCrashID=PD.PedCrashID
 	);
@@ -579,14 +579,38 @@ BEGIN
 
 	SELECT COUNT(*) FROM Inter INTO total_count;
 
-	SELECT Inter.crash_loc, P.percentage, Inter.crsh_sevri, Inter.weather, Inter.light_cond, Inter.num_lanes
-	FROM Inter,
+	SELECT P.crash_loc, P.percentage, W.weather, L.light_cond
+	FROM
 	(
 	SELECT crash_loc, COUNT(*)/total_count*100 AS percentage
 	FROM Inter AS I
 	GROUP BY crash_loc
-	) AS P
-	WHERE Inter.crash_loc=P.crash_loc
+	) AS P,
+	(
+	SELECT COUNT(*), crash_loc, weather
+	FROM Inter
+	GROUP BY crash_loc, weather
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM Inter AS I
+	WHERE I.crash_loc=Inter.crash_loc
+	GROUP BY I.crash_loc, I.weather
+	)
+	) AS W,
+	(
+	SELECT COUNT(*), crash_loc, light_cond
+	FROM Inter
+	GROUP BY crash_loc, light_cond
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM Inter AS I
+	WHERE I.crash_loc=Inter.crash_loc
+	GROUP BY I.crash_loc, I.light_cond
+	)
+	) AS L
+	WHERE P.crash_loc=W.crash_loc AND P.crash_loc=L.crash_loc
 	ORDER BY P.percentage DESC;
 
 	DROP TABLE InterBike;
@@ -596,16 +620,13 @@ END |
 delimiter ;
 
 
-
-
-
 # query 15
 DROP PROCEDURE IF EXISTS Traffic_Bike;
 delimiter |
 CREATE PROCEDURE Traffic_Bike()
 BEGIN
-	SELECT R.traff_cntr, TrafficC.traff_count/TotalC.total_count*100 AS TrafficControlRate, Result.crsh_sevri, weather, light_cond, num_lanes
-	FROM BikeCrashRdCond AS R, BikeCrashResult AS Result,
+	SELECT R.traff_cntr, TrafficC.traff_count/TotalC.total_count*100 AS TrafficControlRate, Result.crsh_sevri, num_lanes
+	FROM
 	(
 	SELECT COUNT(*) AS traff_count, traff_cntr
 	FROM BikeCrashRdCond
@@ -614,7 +635,15 @@ BEGIN
 	(
 	SELECT COUNT(*) AS total_count
 	FROM BikeCrashRdCond
-	) AS TotalC
+	) AS TotalC,
+	(
+	SELECT COUNT(*), traff_cntr, crsh_sevri
+	FROM BikeCrashRdCond, BikeCrashResult
+	WHERE BikeCrashRdCond.BikeCrashID=BikeCrashResult.BikeCrashID
+	) AS Severity,
+	(
+	SELECT 
+	) AS Lanes
 	WHERE R.BikeCrashID=Result.BikeCrashID AND TrafficC.traff_cntr=R.traff_cntr
 	ORDER BY TrafficControlRate DESC;
 END|
@@ -624,7 +653,7 @@ DROP PROCEDURE IF EXISTS Traffic_Ped;
 delimiter |
 CREATE PROCEDURE Traffic_Ped()
 BEGIN
-	SELECT R.traff_cntr, TrafficC.traff_count/TotalC.total_count*100 AS TrafficControlRate, D.crsh_sevri, weather, light_cond, num_lanes
+	SELECT R.traff_cntr, TrafficC.traff_count/TotalC.total_count*100 AS TrafficControlRate, D.crsh_sevri, num_lanes
 	FROM PedCrashRdCond AS R, PedCrashDetail AS D,
 	(
 	SELECT COUNT(*) AS traff_count, traff_cntr
