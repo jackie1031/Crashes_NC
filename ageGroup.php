@@ -64,7 +64,7 @@
 		    $db->next_result();
 		}
 		
-		mysql_close();
+		$db->close();
 
 	?>
 
