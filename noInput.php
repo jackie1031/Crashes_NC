@@ -77,15 +77,13 @@
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>Crash Location</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Weather</td><td>Most Frequent Light Condition</td><td>Most Frequent # of Lanes</td></tr>\n";
+			echo "<tr><td>Crash Location</td><td>Percentage</td><td>Most Frequent Weather</td><td>Most Frequent Light Condition</td></tr>\n";
 			while ($row = mysqli_fetch_array($result)) {
 				$crash_loc = $row['crash_loc'];
 			    $percentage = $row['percentage'];
-			    $crsh_sevri = $row['crsh_sevri'];
 			    $weather = $row['weather'];
 			    $light_cond = $row['light_cond'];
-			    $num_lanes = $row['num_lanes'];
-			    echo "<tr><td>".$crash_loc."</td><td>".$percentage."</td>><td>".$crsh_sevri."</td><td>".$weather."</td><td>".$light_cond."</td><td>".$num_lanes."</td></tr>";
+			    echo "<tr><td>".$crash_loc."</td><td>".$percentage."</td><td>".$weather."</td><td>".$light_cond."</td>></tr>";
 			}
 			echo "</table>\n";
 			$result->close();
@@ -100,15 +98,13 @@
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>Traffic Control</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Weather</td><td>Most Frequent Light Condition</td><td>Most Frequent # of Lanes</td></tr>\n";
+			echo "<tr><td>Traffic Control</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent # of Lanes</td></tr>\n";
 			while ($row = mysqli_fetch_array($result)) {
 				$traff_cntr = $row['traff_cntr'];
 			    $TrafficControlRate = $row['TrafficControlRate'];
 			    $crsh_sevri = $row['crsh_sevri'];
-			    $weather = $row['weather'];
-			    $light_cond = $row['light_cond'];
 			    $num_lanes = $row['num_lanes'];
-			    echo "<tr><td>".$traff_cntr."</td><td>".$TrafficControlRate."</td>><td>".$crsh_sevri."</td>><td>".$weather."</td>><td>".$light_cond."</td>><td>".$num_lanes."</td>></tr>";
+			    echo "<tr><td>".$traff_cntr."</td><td>".$TrafficControlRate."</td>><td>".$crsh_sevri."</td><td>".$num_lanes."</td></tr>";
 			}
 			echo "</table>\n";
 			$result->close();
@@ -122,15 +118,13 @@
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>Traffic Control</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Weather</td><td>Most Frequent Light Condition</td><td>Most Frequent # of Lanes</td></tr>\n";
+			echo "<tr><td>Traffic Control</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent # of Lanes</td></tr>\n";
 			while ($row = mysqli_fetch_array($result)) {
 				$traff_cntr = $row['traff_cntr'];
 			    $TrafficControlRate = $row['TrafficControlRate'];
 			    $crsh_sevri = $row['crsh_sevri'];
-			    $weather = $row['weather'];
-			    $light_cond = $row['light_cond'];
 			    $num_lanes = $row['num_lanes'];
-			    echo "<tr><td>".$traff_cntr."</td><td>".$TrafficControlRate."</td>><td>".$crsh_sevri."</td>><td>".$weather."</td>><td>".$light_cond."</td>><td>".$num_lanes."</td>></tr>";
+			    echo "<tr><td>".$traff_cntr."</td><td>".$TrafficControlRate."</td>><td>".$crsh_sevri."</td><td>".$num_lanes."</td></tr>";
 			}
 			echo "</table>\n";
 			$result->close();
