@@ -597,7 +597,7 @@ delimiter |
 CREATE PROCEDURE AgeGpAccidentRate_Bike(age VARCHAR(7))
 BEGIN
 	IF (EXISTS (SELECT * FROM Biker WHERE bikeage_gr=age)) THEN
-	SELECT Biker.bikeage_gr, bike_injur, bike_race, bike_dir, bike_sex, bike_pos, bike_alc_d
+	SELECT C.count, Biker.bikeage_gr, bike_injur, bike_race, bike_dir, bike_sex, bike_pos, bike_alc_d
 	FROM
 	(
 	SELECT COUNT(*) as count, B.bikeage_gr
@@ -614,7 +614,7 @@ delimiter |
 CREATE PROCEDURE AgeGpAccidentRate_Ped(age VARCHAR(7))
 BEGIN
 	IF (EXISTS (SELECT * FROM PedInjure WHERE pedage_grp=age)) THEN
-	SELECT PedInjure.pedage_grp, ped_pos, ped_race, ped_injury, ped_sex
+	SELECT C.count, PedInjure.pedage_grp, ped_pos, ped_race, ped_injury, ped_sex
 	FROM
 	(
 	SELECT COUNT(*) as count, P.pedage_grp

@@ -17,6 +17,7 @@
 		
 		$type = $_POST['typeTable'];
 
+		echo nl2br("To give the idea of distribution of driver's sex, race, age, etc. we display the count of each category below: \n");
 
 		$result = $db->query("CALL DriverInfo('$type')");
 		if (!$result){
@@ -30,7 +31,7 @@
 			    $count = $row['count'];
 			    echo "<tr><td>".$type."</td><td>".$count."</td></tr>";
 			}
-			echo "</table>\n";
+			echo nl2br("</table>\n");
 			$result->close();
 		    $db->next_result();
 		}
