@@ -37,17 +37,32 @@
 		<h3>1. What kind of crash type (pedestrian AND bike) is the most frequent (top 5) in your city? </h3>
 		<p>Please select city name from this drop-down list:</p>
 
-		<form action="crashTypeInArea.php">
-		  <select name="city">
+		<form action="crashTypeInArea.php" method="POST">
+
+		    <select id="select city" name="city">
+			    <option value="Chapel Hill">Chapel Hill</option>
+			    <option value="Durham">Durham</option>
+			    <option value="carrboro">Carrboro</option>
+			    <option value="none">None - Rural Crash</option>
+		    </select>
+		  <br><br>
+		  <input type="submit" name="submit" >
+		</form>
+
+
+<!--  		<form action="crashTypeInArea.php">
+		  <select id="city" name="city">
 		    <option value="chapelHill">Chapel Hill</option>
 		    <option value="durham">Durham</option>
 		    <option value="carrboro">Carrboro</option>
 		    <option value="none">None - Rural Crash</option>
 		  </select>
 		  <br><br>
-		  <input type="submit">
-		</form>
+		  <input type="submit" name="submit" >
+		</form>  -->
 
+<!-- <input type="submit" name="submit" value="Get Selected Values" />
+ -->
 		<h3>2.Here you can enter a time range(from 0 to 24) to see which area has higher accident rate, ambulance response rate, and hit and run rate. </h3>
 		<p>Please enter the time range (only positive integers allowed):</p>
 
@@ -60,12 +75,12 @@
 		<h3>3. Select a condition(weather, light condition, etc.) and see how it correlates with pedestrian and bike crashes.</p>
 		<p>Please select city name from this drop-down list:</p>
 		<form action="condition.php">
-		  <select name="condition">
+		  <select id="condition" name="condition">
 		    <option value="light">light condition</option>
 		    <option value="roadSurface">road surface</option>
 		    <option value="weather">weather</option>
 		    <option value="speedLimit">exceed speed limit</option>
-		    <option value="alsohol">detected alcohol in driver</option>
+		    <option value="alcohol">detected alcohol in driver</option>
 		  </select>
 		  <br><br>
 		  <input type="submit">
@@ -75,33 +90,21 @@
 		<p>Please select city name from this drop-down list:</p>
 		<form action="ageGroup.php">
 		  <select name="age">
-		    <option value="light">light condition</option>
-		    <option value="roadSurface">road surface</option>
-		    <option value="weather">weather</option>
-		    <option value="speedLimit">exceed speed limit</option>
-		    <option value="alsohol">detected alcohol in driver</option>
+		    <option value="6-10"> 6-10 </option>
+		    <option value="11-15">11-15</option>
+		    <option value="16-19">16-19</option>
+		    <option value="20-24">20-24</option>
+		    <option value="25-29">25-29 </option>
+		    <option value="30-39">30-39 </option>
+		    <option value="40-49">40-49 </option>
+		    <option value="50-59">50-59 </option>
+		    <option value="60-69">60-69 </option>
+		    <option value="70+">70+ </option>
 		  </select>
 		  <br><br>
 		  <input type="submit">
 		</form>
 
-select distinct bikeage_gr from BikeCrash;
-+------------+
-| bikeage_gr |
-+------------+
-| 70+        |
-| 40-49      |
-| 20-24      |
-| 30-39      |
-| 50-59      |
-| 25-29      |
-| Unknown    |
-| 11-15      |
-| 60-69      |
-| 16-19      |
-| 6-10       |
-+------------+
-11 rows in set (0.04 sec)
 
 		<form action="all_percentages.php" method="post">
 		pard d) Password: <input type="text" name="PASSWORD"><br>
