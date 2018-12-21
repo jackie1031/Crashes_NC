@@ -15,9 +15,10 @@
 			echo mysqli_connect_error();
 		}
 
+
 		$condition = $_POST['condition'];
 
-		if ($condition==="light") {
+		if ($condition==="light_cond") {
 
 			$result = $db->query("CALL light_ped");
 			if (!$result) {
@@ -59,7 +60,7 @@
 		    	$db->next_result();
 			}
 
-		} elseif ($condition==="roadSurface") {
+		} elseif ($condition==="rd_surface") {
 
 			$result = $db->query("CALL road_charact_ped");
 			if (!$result) {
@@ -187,13 +188,13 @@
 
 
 		} elseif ($condition==="alcohol") {
+			echo "Only avaliable for bike crashes data \r\n";
 
 			$result = $db->query("CALL alcohol_bike");
 			if (!$result) {
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
-				echo "Bike crashes:\n";
 				echo "<table border=1>\n";
 				echo "<tr><td>Driver Drink Alcohol</td><td>Count</td><td>Percentage</td><td>Most Frequent Hour</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
