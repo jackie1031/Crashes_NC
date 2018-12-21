@@ -387,7 +387,6 @@ BEGIN
 	ORDER BY percentage DESC;
 END|
 delimiter ;
-call HitRun_Bike(3, 18);
 
 
 DROP PROCEDURE IF EXISTS HitRun_Ped;
@@ -401,8 +400,8 @@ BEGIN
 	IF (t_to IS NOT NULL) THEN SET time_to=t_to;
 	END IF;
 
-	SELECT D.hit_run, HitC.hit_count/TotalC.total_count*100 AS percentage, D.crash_hour, R.weather
-	FROM PedCrashRdCond AS R, PedCrashDetail AS D,
+	SELECT HitC.hit_run, HitC.hit_count/TotalC.total_count*100 AS percentage, W.weather
+	FROM
 	(
 	SELECT COUNT(*) as hit_count, hit_run
 	FROM PedCrashDetail
@@ -413,16 +412,28 @@ BEGIN
 	SELECT COUNT(*) as total_count
 	FROM PedCrashDetail
 	WHERE PedCrashDetail.crash_hour>=time_from AND PedCrashDetail.crash_hour<time_to
-	) AS TotalC
-	WHERE R.PedCrashID=D.PedCrashID AND
-	D.crash_hour>=time_from AND D.crash_hour<time_to AND HitC.hit_run=D.hit_run
+	) AS TotalC,
+	(
+	SELECT COUNT(*) AS c, hit_run, weather
+	FROM PedCrashDetail, PedCrashRdCond
+	WHERE PedCrashRdCond.PedCrashID=PedCrashDetail.PedCrashID AND
+	PedCrashDetail.crash_hour>=time_from AND PedCrashDetail.crash_hour<time_to
+	GROUP BY hit_run, weather
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM PedCrashDetail AS D, PedCrashRdCond AS R
+	WHERE D.PedCrashID=R.PedCrashID AND D.crash_hour>=time_from AND D.crash_hour<time_to
+	AND D.hit_run=PedCrashDetail.hit_run
+	GROUP BY hit_run, weather
+	)
+	) AS W
+	WHERE HitC.hit_run=W.hit_run
 	ORDER BY percentage DESC;
 END|
 delimiter ;
 
-call HitRun_Ped(2.0, 17.0);
-
-
+call HitRun_Ped(3,18);
 
 
 # query 12
