@@ -16,9 +16,7 @@
 		}
 	    $city = $_POST['city'];
 		
-		// echo "!!!!!!!!!! finally, the city is: $city";
-
-		echo "Data analysis for pedestrian crashes \n";
+		echo "Data analysis for pedestrian crashes in $city\n";
 
 		$result = $db->query("CALL CrashTypeRate_Ped('$city')");
 		if($result){
@@ -42,7 +40,7 @@
 		}
 
 
-		echo "\n \n Data analysis for bike crashes \n";
+		echo "\n \n Data analysis for bike crashes $city\n";
 		$result = $db->query("CALL CrashTypeRate_Bike('$city')");
 		if($result){
 		     // Cycle through results
