@@ -52,10 +52,11 @@
 		<p>Please enter the time range (only positive integers allowed):</p>
 
 		<form action="timeRangeAnalysis.php" method="POST">
-			Enter time from: <input type="number" name="time_f" min="0" max="24"><br>
-			Enter time to: <input type="number" name="time_to" min = "0" max="24"><br>
+			Enter time from: <input type="number" name="time_f" min="0" max="24" required="required" ><br>
+			Enter time to: <input type="number" name="time_to" min = "0" max="24" required="required"><br>
 		<input type="submit">
 		</form>
+
 
 		<h4>3. Select a condition(weather, light condition, etc.) and see how it correlates with pedestrian and bike crashes.</h4>
 		<p>Please select city name from this drop-down list:</p>

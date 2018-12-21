@@ -113,14 +113,13 @@
 			} else {
 				echo "Pedestrian crashes:\n";
 				echo "<table border=1>\n";
-				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Month</td></tr>\n";
+				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
 					$weather = $row['weather'];
 			    	$type_count = $row['type_count'];
 			    	$percentage = $row['percentage'];
 			    	$most_frequent_severity = $row['most_frequent_severity'];
-			    	$most_frequent_month = $row['most_frequent_month'];
-			    	echo "<tr><td>".$weather."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td><td>".$most_frequent_month."</td></tr>";
+			    	echo "<tr><td>".$weather."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td></tr>";
 				}
 		    	echo "</table>\n";
 		    	$result->close();
@@ -134,14 +133,13 @@
 			} else {
 				echo "Bike crashes:\n";
 				echo "<table border=1>\n";
-				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Month</td></tr>\n";
+				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
 					$weather = $row['weather'];
 			    	$type_count = $row['type_count'];
 			    	$percentage = $row['percentage'];
 			    	$most_frequent_severity = $row['most_frequent_severity'];
-			    	$most_frequent_month = $row['most_frequent_month'];
-			    	echo "<tr><td>".$weather."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td><td>".$most_frequent_month."</td></tr>";
+			    	echo "<tr><td>".$weather."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td></tr>";
 				}
 		    	echo "</table>\n";
 		    	$result->close();

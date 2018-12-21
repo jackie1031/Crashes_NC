@@ -18,13 +18,17 @@ FROM BikeCrashRdCond,
  FROM BikeCrashRdCond as B
 ) as T,
 (
- SELECT crsh_sevri, light_cond
+ SELECT count(*) as most_count, crsh_sevri, light_cond
  FROM BikeCrashRdCond, BikeCrashResult
  WHERE BikeCrashRdCond.BikeCrashID = BikeCrashResult.BikeCrashID
- GROUP BY light_cond
- ORDER BY count(*) DESC
-) as sevei_temp
-WHERE sevei_temp.light_cond = BikeCrashRdCond.light_cond
+ GROUP BY light_cond,crsh_sevri
+ HAVING COUNT(*) >= ALL(
+ 	 select count(*) 
+	 FROM BikeCrashRdCond, BikeCrashResult
+	 WHERE BikeCrashRdCond.BikeCrashID = BikeCrashResult.BikeCrashID
+	 GROUP BY light_cond,crsh_sevri
+ 	)
+ ) as sevei_temp
 GROUP BY light_cond
 ORDER BY type_count DESC;
 END|
@@ -42,17 +46,22 @@ FROM PedCrashRdCond,
  FROM PedCrashRdCond as B
 ) as T,
 (
- SELECT crsh_sevri, light_cond
+ SELECT count(*) as most_count, crsh_sevri, light_cond
  FROM PedCrashRdCond, PedCrashDetail
  WHERE PedCrashRdCond.PedCrashID = PedCrashDetail.PedCrashID
- GROUP BY light_cond
- ORDER BY count(*) DESC
-) as sevei_temp
-WHERE sevei_temp.light_cond = PedCrashRdCond.light_cond
+ GROUP BY light_cond,crsh_sevri
+ HAVING COUNT(*) >= ALL(
+ 	 select count(*) 
+	 FROM PedCrashRdCond, PedCrashDetail
+	 WHERE PedCrashRdCond.PedCrashID = PedCrashDetail.PedCrashID
+	 GROUP BY light_cond,crsh_sevri
+ 	)
+ ) as sevei_temp
 GROUP BY light_cond
 ORDER BY type_count DESC;
 END|
 delimiter ;
+
 
 #4
 -- Does road surface correlated with bicycle/pedestrian crash rate?
@@ -72,21 +81,29 @@ FROM BikeCrashRdCond,
  FROM BikeCrashRdCond as B
 ) as T,
 (
- SELECT crsh_sevri, rd_surface
+ SELECT count(*) as most_count, crsh_sevri, rd_surface
  FROM BikeCrashRdCond, BikeCrashResult
  WHERE BikeCrashRdCond.BikeCrashID = BikeCrashResult.BikeCrashID
- GROUP BY rd_surface
- ORDER BY count(*) DESC
-) as sevei_temp,
+ GROUP BY rd_surface,crsh_sevri
+ HAVING COUNT(*) >= ALL(
+ 	 select count(*) 
+	 FROM BikeCrashRdCond, BikeCrashResult
+	 WHERE BikeCrashRdCond.BikeCrashID = BikeCrashResult.BikeCrashID
+	 GROUP BY rd_surface,crsh_sevri
+ 	)
+ ) as sevei_temp,
 (
- SELECT weather, rd_surface
+ SELECT count(*) as most_count, weather, rd_surface
  FROM BikeCrashRdCond, BikeCrashResult
  WHERE BikeCrashRdCond.BikeCrashID = BikeCrashResult.BikeCrashID
- GROUP BY rd_surface
- ORDER BY count(*) DESC
-) as weather_temp
-WHERE sevei_temp.rd_surface = BikeCrashRdCond.rd_surface
-AND sevei_temp.rd_surface = weather_temp.rd_surface
+ GROUP BY rd_surface,weather
+ HAVING COUNT(*) >= ALL(
+ 	 select count(*) 
+	 FROM BikeCrashRdCond, BikeCrashResult
+	 WHERE BikeCrashRdCond.BikeCrashID = BikeCrashResult.BikeCrashID
+	 GROUP BY rd_surface,weather
+ 	)
+ ) as weather_temp
 GROUP BY rd_surface
 ORDER BY type_count DESC;
 END|
@@ -104,21 +121,29 @@ FROM PedCrashRdCond,
  FROM PedCrashRdCond as B
 ) as T,
 (
- SELECT crsh_sevri, rd_surface
+ SELECT count(*) as most_count, crsh_sevri, rd_surface
  FROM PedCrashRdCond, PedCrashDetail
  WHERE PedCrashRdCond.PedCrashID = PedCrashDetail.PedCrashID
- GROUP BY rd_surface
- ORDER BY count(*) DESC
-) as sevei_temp,
+ GROUP BY rd_surface,crsh_sevri
+ HAVING COUNT(*) >= ALL(
+ 	 select count(*) 
+	 FROM PedCrashRdCond, PedCrashDetail
+	 WHERE PedCrashRdCond.PedCrashID = PedCrashDetail.PedCrashID
+	 GROUP BY rd_surface,crsh_sevri
+ 	)
+ ) as sevei_temp,
 (
- SELECT weather, rd_surface
+ SELECT count(*) as most_count, weather, rd_surface
  FROM PedCrashRdCond, PedCrashDetail
  WHERE PedCrashRdCond.PedCrashID = PedCrashDetail.PedCrashID
- GROUP BY rd_surface
- ORDER BY count(*) DESC
-) as weather_temp
-WHERE sevei_temp.rd_surface = PedCrashRdCond.rd_surface
-AND sevei_temp.rd_surface = weather_temp.rd_surface
+ GROUP BY rd_surface,weather
+ HAVING COUNT(*) >= ALL(
+ 	 select count(*) 
+	 FROM PedCrashRdCond, PedCrashDetail
+	 WHERE PedCrashRdCond.PedCrashID = PedCrashDetail.PedCrashID
+	 GROUP BY rd_surface,weather
+ 	)
+ ) as weather_temp
 GROUP BY rd_surface
 ORDER BY type_count DESC;
 END|
@@ -134,41 +159,35 @@ delimiter |
 CREATE PROCEDURE weather_bike( )
 BEGIN
 SELECT BikeCrashRdCond.weather, COUNT(*) AS type_count, COUNT(*)/T.total_count*100 as percentage, 
-sevei_temp.crsh_sevri as most_frequent_severity, month_temp.crash_mont AS most_frequent_month
+sevei_temp.crsh_sevri as most_frequent_severity
 FROM BikeCrashRdCond,
 (
  SELECT COUNT(*) as total_count
  FROM BikeCrashRdCond as B
 ) as T,
 (
- SELECT crsh_sevri, weather
+ SELECT count(*) as most_count, crsh_sevri, weather
  FROM BikeCrashRdCond, BikeCrashResult
  WHERE BikeCrashRdCond.BikeCrashID = BikeCrashResult.BikeCrashID
- GROUP BY weather
- ORDER BY count(*) DESC
-) as sevei_temp,
-(
- SELECT crash_mont,weather 
- FROM BikeCrashRdCond, BikeCrashTime
- WHERE BikeCrashRdCond.BikeCrashID = BikeCrashTime.BikeCrashID
- GROUP BY weather
- ORDER BY count(*) DESC
-) as month_temp
-WHERE sevei_temp.weather = BikeCrashRdCond.weather
-AND sevei_temp.weather = month_temp.weather
+ GROUP BY weather,crsh_sevri
+ HAVING COUNT(*) >= ALL(
+	 SELECT count(*)
+	 FROM BikeCrashRdCond, BikeCrashResult
+	 WHERE BikeCrashRdCond.BikeCrashID = BikeCrashResult.BikeCrashID
+	 GROUP BY weather,crsh_sevri
+ 	)
+ ) as sevei_temp
 GROUP BY weather
 ORDER BY type_count DESC;
 END|
 delimiter ;
-
-
 
 DROP PROCEDURE IF EXISTS weather_ped;
 delimiter |
 CREATE PROCEDURE weather_ped( )
 BEGIN
 SELECT PedCrashRdCond.weather, COUNT(*) AS type_count, COUNT(*)/T.total_count*100 as percentage, 
-sevei_temp.crsh_sevri as most_frequent_severity, month_temp.crash_mont AS most_frequent_month
+sevei_temp.crsh_sevri as most_frequent_severity
 FROM PedCrashRdCond,
 (
  SELECT COUNT(*) as total_count
@@ -180,26 +199,17 @@ FROM PedCrashRdCond,
  WHERE PedCrashRdCond.PedCrashID = PedCrashDetail.PedCrashID
  GROUP BY weather
  ORDER BY count(*) DESC
-) as sevei_temp,
-(
- SELECT crash_mont,weather 
- FROM PedCrashRdCond, PedCrashDetail
- WHERE PedCrashRdCond.PedCrashID = PedCrashDetail.PedCrashID
- GROUP BY weather
- ORDER BY count(*) DESC
-) as month_temp
+) as sevei_temp
 WHERE sevei_temp.weather = PedCrashRdCond.weather
-AND sevei_temp.weather = month_temp.weather
 GROUP BY weather
 ORDER BY type_count DESC;
 END|
 delimiter ;
 
 #7
-For bicycle crashes, what’s the percentage where the Drivers have Alcohol Detected?
-input:
-output: percentage of alco/all for biker, percentage of alco/all for driver, time of the day
-
+-- For bicycle crashes, what’s the percentage where the Drivers have Alcohol Detected?
+-- input:
+-- output: percentage of alco/all for biker, percentage of alco/all for driver, time of the day
 
 DROP PROCEDURE IF EXISTS alcohol_bike;
 delimiter |
@@ -225,20 +235,5 @@ GROUP BY BikeCrashReason.drvr_alc_d
 ORDER BY type_count DESC;
 END|
 delimiter ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
