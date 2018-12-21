@@ -102,7 +102,6 @@ public class ReasonPedParser {
 
 			ReasonPed reasonPedAdd = new ReasonPed();
 
-			// System.out.println("entire list "+ data);
 
 			reasonPedAdd.crashalcoh = data.get(crashalcoh);
 			reasonPedAdd.excsspdind = data.get(excsspdind);
@@ -130,8 +129,6 @@ public class ReasonPedParser {
 				ArrayList<String> limit = new ArrayList<String>(Arrays.asList(speedLimir.split("-")));
 				ArrayList<String> driverSp = new ArrayList<String>(Arrays.asList(driverSpeed.split("-")));
 				exceedSpeed = Integer.parseInt(driverSp.get(1).trim()) - Integer.parseInt(limit.get(1).trim());
-				// System.out.println("the new exceedSpeed: "+ exceedSpeed);
-				// System.out.println("the new driverSpeedTmp: "+ driverSp);
 			}
 
 			reasonPedAdd.exceedSpeed = exceedSpeed;

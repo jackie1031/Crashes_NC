@@ -16,8 +16,9 @@
 		}
 
 		$age = $_POST['age'];
+		echo nl2br(" \n Note1: Since the entries within each age group is very limited, we present the entire dataset below. \n");
 
-		echo nl2br(" \n Note: If the table is empty, it means there are no crashes within this age group.\n");
+		echo nl2br(" \n Note2: If the table is empty, it means there are no crashes within this age group.\n");
 		echo nl2br("Info about pedestrian crash victims:\n");
 
 		$result = $db->query("CALL AgeGpAccidentRate_Ped('$age')");

@@ -87,7 +87,7 @@ public class PedInjParser {
 		int pedInjuInd = header.indexOf("ped_injury");
 		int pedSexInd = header.indexOf("ped_sex");
 		
-		System.out.println("ped_race index is: "+ pedRaceInd);
+		// System.out.println("ped_race index is: "+ pedRaceInd);
 
 
 		while ((line = br.readLine()) != null) {
