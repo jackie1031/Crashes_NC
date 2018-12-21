@@ -16,7 +16,7 @@
 		}
 	    $city = $_POST['city'];
 		
-		echo "Data analysis for pedestrian crashes in $city\n";
+		echo nl2br( "Data analysis for pedestrian crashes in $city\n");
 
 		$result = $db->query("CALL CrashTypeRate_Ped('$city')");
 		if($result){
@@ -40,7 +40,7 @@
 		}
 
 
-		echo "\n \n Data analysis for bike crashes $city\n";
+		echo nl2br("\n Data analysis for bike crashes $city \n");
 		$result = $db->query("CALL CrashTypeRate_Bike('$city')");
 		if($result){
 		     // Cycle through results
@@ -60,7 +60,7 @@
 		    $db->next_result();
 		}
 
-		echo "All possible crash type for pedestrian and bike \n";
+		echo nl2br( "\n All possible crash type for pedestrian and bike \n");
 
 		$result = $db->query("CALL ShowCrashTypes_Comb");
 		if($result){

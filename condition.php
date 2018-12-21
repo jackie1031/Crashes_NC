@@ -25,7 +25,7 @@
 				echo "Fail to retrieve info for pedestrian crashes!\n";
 				print mysql_error();
 			} else {
-				echo "Pedestrian crashes:\n";
+				echo nl2br("\n Pedestrian crashes:\n");
 				echo "<table border=1>\n";
 				echo "<tr><td>Light Condition</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
@@ -45,7 +45,7 @@
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
-				echo "Bike crashes:\n";
+				echo nl2br( "\n Bike crashes:\n");
 				echo "<table border=1>\n";
 				echo "<tr><td>Light Condition</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
@@ -67,7 +67,7 @@
 				echo "Fail to retrieve info for pedestrian crashes!\n";
 				print mysql_error();
 			} else {
-				echo "Pedestrian crashes:\n";
+				echo nl2br( "\n Pedestrian crashes:\n");
 				echo "<table border=1>\n";
 				echo "<tr><td>Surface Condition</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Weather</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
@@ -88,7 +88,7 @@
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
-				echo "Bike crashes:\n";
+				echo nl2br( "\n Bike crashes:\n");
 				echo "<table border=1>\n";
 				echo "<tr><td>Surface Condition</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Weather</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
@@ -111,7 +111,7 @@
 				echo "Fail to retrieve info for pedestrian crashes!\n";
 				print mysql_error();
 			} else {
-				echo "Pedestrian crashes:\n";
+				echo nl2br( "\n Pedestrian crashes:\n") ;
 				echo "<table border=1>\n";
 				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
@@ -131,7 +131,7 @@
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
-				echo "Bike crashes:\n";
+				echo nl2br( "\n Bike crashes:\n");
 				echo "<table border=1>\n";
 				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
@@ -153,7 +153,7 @@
 				echo "Fail to retrieve info for pedestrian crashes!\n";
 				print mysql_error();
 			} else {
-				echo "Pedestrian crashes:\n";
+				echo nl2br( "\n Pedestrian crashes:\n");
 				echo "<table border=1>\n";
 				echo "<tr><td>Exceed Speed Limit Percentage</td><td>Below Speed Limit Percentage</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
@@ -171,7 +171,7 @@
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
-				echo "Bike crashes:\n";
+				echo nl2br( "\n Bike crashes:\n");
 				echo "<table border=1>\n";
 				echo "<tr><td>Exceed Speed Limit Percentage</td><td>Below Speed Limit Percentage</td></tr>\n";
 		    	while($row = mysqli_fetch_array($result)) {
@@ -186,7 +186,7 @@
 
 
 		} elseif ($condition==="alcohol") {
-			echo "Only avaliable for bike crashes data \r\n";
+			echo nl2br( "\n Only avaliable for bike crashes data \r\n");
 
 			$result = $db->query("CALL alcohol_bike");
 			if (!$result) {
