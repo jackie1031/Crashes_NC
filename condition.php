@@ -8,152 +8,205 @@
 		$dbhost = 'dbase.cs.jhu.edu:3306';
 		$dbuser = 'ycao29';
 		$dbpass = 'wyxjaycqli';
-		$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+		$dbname = 'cs41518_ycao29_db';
+		$db = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
 
-		if (!$conn) {
-			die ('Error connecting to mysql');
+		if(mysqli_connect_errno()){
+			echo mysqli_connect_error();
 		}
 
 		$condition = $_POST['condition'];
 
-		$dbname = 'cs41518_ycao29_db';
-		mysql_select_db($dbname, $conn);
-
 		if ($condition==="light") {
 
-			$result_ped = mysql_query("CALL light_ped", $conn);
-			if (!$result_ped) {
+			$result = $db->query("CALL light_ped");
+			if (!$result) {
 				echo "Fail to retrieve info for pedestrian crashes!\n";
 				print mysql_error();
 			} else {
 				echo "Pedestrian crashes:\n";
 				echo "<table border=1>\n";
-				echo "<tr><td>LightCondition</td><td>Count</td><td>Percentage</td><td>MostFrequentSeverity</td></tr>\n";
-				while ($myrow = mysql_fetch_array($result_ped)) {
-					printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["light_cond"], $myrow["type_count"], $myrow["percentage"], $myrow["most_frequent_severity"]);
+				echo "<tr><td>Light Condition</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td></tr>\n";
+		    	while($row = mysqli_fetch_array($result)) {
+					$light_cond = $row['light_cond'];
+			    	$type_count = $row['type_count'];
+			    	$percentage = $row['percentage'];
+			    	$most_frequent_severity = $row['most_frequent_severity'];
+			    	echo "<tr><td>".$light_cond."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td></tr>";
 				}
-				echo "</table>\n";
+		    	echo "</table>\n";
+		    	$result->close();
+		    	$db->next_result();
 			}
 
-			$result_bike = mysql_query("CALL light_bike", $conn);
-			if (!$result_bike) {
+			$result = $db->query("CALL light_bike");
+			if (!$result) {
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
 				echo "Bike crashes:\n";
 				echo "<table border=1>\n";
-				echo "<tr><td>LightCondition</td><td>Count</td><td>Percentage</td><td>MostFrequentSeverity</td></tr>\n";
-				while ($myrow = mysql_fetch_array($result_bike)) {
-					printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["light_cond"], $myrow["type_count"], $myrow["percentage"], $myrow["most_frequent_severity"]);
+				echo "<tr><td>Light Condition</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td></tr>\n";
+		    	while($row = mysqli_fetch_array($result)) {
+					$light_cond = $row['light_cond'];
+			    	$type_count = $row['type_count'];
+			    	$percentage = $row['percentage'];
+			    	$most_frequent_severity = $row['most_frequent_severity'];
+			    	echo "<tr><td>".$light_cond."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td></tr>";
 				}
-				echo "</table>\n";
+		    	echo "</table>\n";
+		    	$result->close();
+		    	$db->next_result();
 			}
 
 		} elseif ($condition==="roadSurface") {
 
-			$result_ped = mysql_query("CALL road_charact_ped", $conn);
-			if (!$result_ped) {
+			$result = $db->query("CALL road_charact_ped");
+			if (!$result) {
 				echo "Fail to retrieve info for pedestrian crashes!\n";
 				print mysql_error();
 			} else {
 				echo "Pedestrian crashes:\n";
 				echo "<table border=1>\n";
-				echo "<tr><td>SurfaceCondition</td><td>Count</td><td>Percentage</td><td>MostFrequentSeverity</td><td>MostFrequentWeather</td></tr>\n";
-				while ($myrow = mysql_fetch_array($result_ped)) {
-					printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["rd_surface"], $myrow["type_count"], $myrow["percentage"], $myrow["most_frequent_severity"], $myrow["most_frequent_weather"]);
+				echo "<tr><td>Surface Condition</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Weather</td></tr>\n";
+		    	while($row = mysqli_fetch_array($result)) {
+					$rd_surface = $row['rd_surface'];
+			    	$type_count = $row['type_count'];
+			    	$percentage = $row['percentage'];
+			    	$most_frequent_severity = $row['most_frequent_severity'];
+			    	$most_frequent_weather = $row['most_frequent_weather'];
+			    	echo "<tr><td>".$rd_surface."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td><td>".$most_frequent_weather."</td></tr>";
 				}
-				echo "</table>\n";
+		    	echo "</table>\n";
+		    	$result->close();
+		    	$db->next_result();
 			}
 
-			$result_bike = mysql_query("CALL road_charact_bike", $conn);
-			if (!$result_ped) {
+			$result = $db->query("CALL road_charact_bike");
+			if (!$result) {
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
 				echo "Bike crashes:\n";
 				echo "<table border=1>\n";
-				echo "<tr><td>SurfaceCondition</td><td>Count</td><td>Percentage</td><td>MostFrequentSeverity</td><td>MostFrequentWeather</td></tr>\n";
-				while ($myrow = mysql_fetch_array($result_bike)) {
-					printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["rd_surface"], $myrow["type_count"], $myrow["percentage"], $myrow["most_frequent_severity"], $myrow["most_frequent_weather"]);
+				echo "<tr><td>Surface Condition</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Weather</td></tr>\n";
+		    	while($row = mysqli_fetch_array($result)) {
+					$rd_surface = $row['rd_surface'];
+			    	$type_count = $row['type_count'];
+			    	$percentage = $row['percentage'];
+			    	$most_frequent_severity = $row['most_frequent_severity'];
+			    	$most_frequent_weather = $row['most_frequent_weather'];
+			    	echo "<tr><td>".$rd_surface."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td><td>".$most_frequent_weather."</td></tr>";
 				}
-				echo "</table>\n";
+		    	echo "</table>\n";
+		    	$result->close();
+		    	$db->next_result();
 			}
 
 		} elseif ($condition==="weather") {
 
-			$result_ped = mysql_query("CALL weather_ped", $conn);
-			if (!$result_ped) {
+			$result = $db->query("CALL weather_ped");
+			if (!$result) {
 				echo "Fail to retrieve info for pedestrian crashes!\n";
 				print mysql_error();
 			} else {
 				echo "Pedestrian crashes:\n";
 				echo "<table border=1>\n";
-				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>MostFrequentSeverity</td><td>MostFrequentMonth</td></tr>\n";
-				while ($myrow = mysql_fetch_array($result_ped)) {
-					printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["weather"], $myrow["type_count"], $myrow["percentage"], $myrow["most_frequent_severity"], $myrow["most_frequent_month"]);
+				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Month</td></tr>\n";
+		    	while($row = mysqli_fetch_array($result)) {
+					$weather = $row['weather'];
+			    	$type_count = $row['type_count'];
+			    	$percentage = $row['percentage'];
+			    	$most_frequent_severity = $row['most_frequent_severity'];
+			    	$most_frequent_month = $row['most_frequent_month'];
+			    	echo "<tr><td>".$weather."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td><td>".$most_frequent_month."</td></tr>";
 				}
-				echo "</table>\n";
+		    	echo "</table>\n";
+		    	$result->close();
+		    	$db->next_result();
 			}
 
-			$result_bike = mysql_query("CALL weather_bike", $conn);
-			if (!$result_ped) {
+			$result = $db->query("CALL weather_bike");
+			if (!$result) {
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
 				echo "Bike crashes:\n";
 				echo "<table border=1>\n";
-				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>MostFrequentSeverity</td><td>MostFrequentMonth</td></tr>\n";
-				while ($myrow = mysql_fetch_array($result_bike)) {
-					printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["weather"], $myrow["type_count"], $myrow["percentage"], $myrow["most_frequent_severity"], $myrow["most_frequent_month"]);
+				echo "<tr><td>Weather</td><td>Count</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Month</td></tr>\n";
+		    	while($row = mysqli_fetch_array($result)) {
+					$weather = $row['weather'];
+			    	$type_count = $row['type_count'];
+			    	$percentage = $row['percentage'];
+			    	$most_frequent_severity = $row['most_frequent_severity'];
+			    	$most_frequent_month = $row['most_frequent_month'];
+			    	echo "<tr><td>".$weather."</td><td>".$type_count."</td><td>".$percentage."</td><td>".$most_frequent_severity."</td><td>".$most_frequent_month."</td></tr>";
 				}
-				echo "</table>\n";
+		    	echo "</table>\n";
+		    	$result->close();
+		    	$db->next_result();
 			}
 
 		} elseif ($condition==="speedLimit") {
 
-			$result_ped = mysql_query("CALL ExceedSp_Ped", $conn);
-			if (!$result_ped) {
+			$result = $db->query("CALL ExceedSp_Ped");
+			if (!$result) {
 				echo "Fail to retrieve info for pedestrian crashes!\n";
 				print mysql_error();
 			} else {
 				echo "Pedestrian crashes:\n";
 				echo "<table border=1>\n";
 				echo "<tr><td>Exceed Speed Limit Percentage</td><td>Below Speed Limit Percentage</td></tr>\n";
-				while ($myrow = mysql_fetch_array($result_ped)) {
-					printf("<tr><td>%s</td><td>%s</td></tr>\n", $myrow["ExceedLim_percentage"], $myrow["BelowLim_percentage"]);
+		    	while($row = mysqli_fetch_array($result)) {
+					$ExceedLim_percentage = $row['ExceedLim_percentage'];
+			    	$BelowLim_percentage = $row['BelowLim_percentage'];
+			    	echo "<tr><td>".$ExceedLim_percentage."</td><td>".$BelowLim_percentage."</td></tr>";
 				}
-				echo "</table>\n";
+		    	echo "</table>\n";
+		    	$result->close();
+		    	$db->next_result();
 			}
 
-			$result_bike = mysql_query("CALL ExceedSp_Bike", $conn);
-			if (!$result_ped) {
+			$result = $db->query("CALL ExceedSp_Bike");
+			if (!$result) {
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
 				echo "Bike crashes:\n";
 				echo "<table border=1>\n";
 				echo "<tr><td>Exceed Speed Limit Percentage</td><td>Below Speed Limit Percentage</td></tr>\n";
-				while ($myrow = mysql_fetch_array($result_bike)) {
-					printf("<tr><td>%s</td><td>%s</td></tr>\n", $myrow["ExceedLim_percentage"], $myrow["BelowLim_percentage"]);
+		    	while($row = mysqli_fetch_array($result)) {
+					$ExceedLim_percentage = $row['ExceedLim_percentage'];
+			    	$BelowLim_percentage = $row['BelowLim_percentage'];
+			    	echo "<tr><td>".$ExceedLim_percentage."</td><td>".$BelowLim_percentage."</td></tr>";
 				}
-				echo "</table>\n";
+		    	echo "</table>\n";
+		    	$result->close();
+		    	$db->next_result();
 			}
+
 
 		} elseif ($condition==="alcohol") {
 
-			$result_bike = mysql_query("CALL alcohol_bike", $conn);
-			if (!$result_ped) {
+			$result = $db->query("CALL alcohol_bike");
+			if (!$result) {
 				echo "Fail to retrieve info for bike crashes!\n";
 				print mysql_error();
 			} else {
 				echo "Bike crashes:\n";
 				echo "<table border=1>\n";
-				echo "<tr><td>DriverDrinkAlcohol</td><td>Count</td><td>Percentage</td><td>MostFrequentHour</td></tr>\n";
-				while ($myrow = mysql_fetch_array($result_ped)) {
-					printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["drvr_alc_d"], $myrow["type_count"], $myrow["driver_drink_percentage"], $myrow["the_hour"]);
+				echo "<tr><td>Driver Drink Alcohol</td><td>Count</td><td>Percentage</td><td>Most Frequent Hour</td></tr>\n";
+		    	while($row = mysqli_fetch_array($result)) {
+					$drvr_alc_d = $row['drvr_alc_d'];
+			    	$type_count = $row['type_count'];
+			    	$driver_drink_percentage = $row['driver_drink_percentage'];
+			    	$the_hour = $row['the_hour'];
+			    	echo "<tr><td>".$drvr_alc_d."</td><td>".$type_count."</td><td>".$driver_drink_percentage."</td><td>".$the_hour."</td></tr>";
 				}
-				echo "</table>\n";
-			}			
+		    	echo "</table>\n";
+		    	$result->close();
+		    	$db->next_result();
+			}
 
 		}
 
