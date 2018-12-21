@@ -34,7 +34,7 @@
 		<br>
 		<br>
 
-		<h3>1. What kind of crash type (pedestrian AND bike) is the most frequent (top 5) in your city? </h3>
+		<h4>1. What kind of crash type (pedestrian AND bike) is the most frequent (top 5) in your city? </h4>
 		<p>Please select city name from this drop-down list:</p>
 
 		<form action="crashTypeInArea.php" method="POST">
@@ -48,7 +48,7 @@
 		  <input type="submit" name="submit" >
 		</form>
 
-		<h3>2.Here you can enter a time range(from 0 to 24) to see which area has higher accident rate, ambulance response rate, and hit and run rate. </h3>
+		<h4>2.Here you can enter a time range(from 0 to 24) to see which area has higher accident rate, ambulance response rate, and hit and run rate. </h4>
 		<p>Please enter the time range (only positive integers allowed):</p>
 
 		<form action="timeRangeAnalysis.php" method="POST">
@@ -57,7 +57,7 @@
 		<input type="submit">
 		</form>
 
-		<h3>3. Select a condition(weather, light condition, etc.) and see how it correlates with pedestrian and bike crashes.</p>
+		<h4>3. Select a condition(weather, light condition, etc.) and see how it correlates with pedestrian and bike crashes.</h4>
 		<p>Please select city name from this drop-down list:</p>
 		<form action="condition.php" method="POST">
 		  <select id="condition" name="condition">
@@ -71,8 +71,8 @@
 		  <input type="submit" name="submit" >
 		</form>
 
-		<h3>4. For a selected age group, show all crashes data for the victim. </p>
-		<p>Please select city name from this drop-down list:</p>
+		<h4>4. For a selected age group, show all crashes data for the victim. </p>
+		<p>Please select city name from this drop-down list:</h4>
 		<form action="ageGroup.php" method="POST">
 		  <select name="age">
 		    <option value="6-10"> 6-10 </option>
@@ -90,26 +90,36 @@
 		  <input type="submit" name="submit" >
 		</form>
 
-		<h3>5. Display analysis on both bike and pedestrian crash related to the severity of injury, freqeuncy of crases at intersection/non-intersection and traffic control </p>
+		<h4>5. Display analysis on both bike and pedestrian crash related to the severity of injury, freqeuncy of crases at intersection/non-intersection and traffic control </h4>
 		<p>Please select city name from this drop-down list:</p>
-		<form action="noInPut.php" method="POST">
+		<form action="noInput.php" method="POST">
 <!-- 			Password: <input type="text" name="PASSWORD"><br>
  -->		<input type="submit" name="submit">
 		</form>
 
-<!-- 
-		<form action="all_percentages.php" method="post">
-		pard d) Password: <input type="text" name="PASSWORD"><br>
-		<input type="submit">
-		</form> 
+		<h4>6. For specific type of location (rural/urban), list the analysis of crashes (hit and run rate, time, alcohol detected, etc.). </h4>
+		<p>Please select location type from this drop-down list:</p>
+		<form action="typeLocation.php" method="POST">
+		  <select name="typeLoc">
+		    <option value="rural"> rural </option>
+		    <option value="urban">urban</option>
+		  </select>
+		  <br><br>
+		  <input type="submit" name="submit" >
+		</form>
 
-		<form action="update_score.php" method="post">
-		part g) Password: <input type="text" name="PASSWORD"><br>
-		SSN: <input type="text" name="SSN"><br>
-		AssignmentName: <input type="text" name="AssignmentName"><br>
-		NewScore: <input type="text" name="NewScore"><br>
-		<input type="submit">
-		</form>  -->
+
+		<h4>7. Display the driver information for pedestrian/bike crashes. </h4>
+		<p>Please select table from this drop-down list:</p>
+		<form action="typeTable.php" method="POST">
+		  <select name="typeTable">
+		    <option value="pedestrian"> pedestrian </option>
+		    <option value="bike">bike</option>
+		  </select>
+		  <br><br>
+		  <input type="submit" name="submit" >
+		</form>
+
 
 	</body>
 </html>
