@@ -24,14 +24,11 @@
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>Sex</td><td>Age</td><td>Vehicle Type</td><td>Injury</td><td>Crash Type</td></tr>\n";
+			echo "<tr><td>Category</td><td>Count For Each Category</td></tr>\n";
 			while ($row = mysqli_fetch_array($result)) {
-			    $drvr_sex = $row['drvr_sex'];
-			    $drvr_age = $row['drvr_age'];
-			    $drvr_vehty = $row['drvr_vehty'];
-			    $drvr_injur = $row['drvr_injur'];
-			    $crash_type = $row['crash_type'];
-			    echo "<tr><td>".$percentage."</td><td>".$hit_run."</td><td>".$drvr_alc_d."</td><td>".$weather."</td><td>".$crsh_sevri."</td></tr>";
+			    $type = $row['type'];
+			    $count = $row['count'];
+			    echo "<tr><td>".$type."</td><td>".$count."</td></tr>";
 			}
 			echo "</table>\n";
 			$result->close();

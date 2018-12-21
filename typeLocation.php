@@ -24,14 +24,12 @@
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>Percentage</td><td>Hit&Run</td><td>Driver Drink Alcohol</td><td>Most Frequent Weather</td><td>Most Frequent Severity</td></tr>\n";
+			echo "<tr><td>Percentage</td><td>Driver Drink Alcohol</td><td>Most Frequent Severity</td></tr>\n";
 			while ($row = mysqli_fetch_array($result)) {
 			    $percentage = $row['percentage'];
-			    $hit_run = $row['hit_run'];
 			    $drvr_alc_d = $row['drvr_alc_d'];
-			    $weather = $row['weather'];
 			    $crsh_sevri = $row['crsh_sevri'];
-			    echo "<tr><td>".$percentage."</td><td>".$hit_run."</td><td>".$drvr_alc_d."</td><td>".$weather."</td><td>".$crsh_sevri."</td></tr>";
+			    echo "<tr><td>".$percentage."</td><td>".$drvr_alc_d."</td><td>".$crsh_sevri."</td></tr>";
 			}
 			echo "</table>\n";
 			$result->close();
@@ -45,14 +43,12 @@
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>Percentage</td><td>Hit&Run</td><td>Driver Drink Alcohol</td><td>Most Frequent Weather</td><td>Most Frequent Severity</td></tr>\n";
+			echo "<tr><td>Percentage</td><td>Driver Drink Alcohol</td><td>Most Frequent Severity</td></tr>\n";
 			while ($row = mysqli_fetch_array($result)) {
 			    $percentage = $row['percentage'];
-			    $hit_run = $row['hit_run'];
 			    $drvr_alc_d = $row['drvr_alc_d'];
-			    $weather = $row['weather'];
 			    $crsh_sevri = $row['crsh_sevri'];
-			    echo "<tr><td>".$percentage."</td><td>".$hit_run."</td><td>".$drvr_alc_d."</td><td>".$weather."</td><td>".$crsh_sevri."</td></tr>";
+			    echo "<tr><td>".$percentage."</td><td>".$drvr_alc_d."</td><td>".$crsh_sevri."</td></tr>";
 			}
 			echo "</table>\n";
 			$result->close();

@@ -494,19 +494,43 @@ CREATE PROCEDURE LocAccidentRate_Bike(loc VARCHAR(5))
 BEGIN
 	DECLARE total_count INT;
 	SELECT COUNT(*) FROM BikeCrashLoc INTO total_count;
-	IF (EXISTS (SELECT * FROM BikeCrashLoc WHERE rural_urba=loc)) THEN
-	SELECT P.percentage, hit_run, drvr_alc_d, weather, crsh_sevri
-	FROM BikeCrashLoc AS BL, BikeCrashRdCond AS BC, BikeCrashResult AS BR, Driver_BikeCrash AS D,
+	SELECT P.percentage, A.drvr_alc_d, S.crsh_sevri
+	FROM
 	(
-	SELECT COUNT(*)/total_count*100 AS percentage
+	SELECT COUNT(*)/total_count*100 AS percentage, rural_urba
 	FROM BikeCrashLoc as L
 	WHERE rural_urba=loc
-	) as P
-	WHERE BL.BikeCrashID=BC.BikeCrashID AND BC.BikeCrashID=BR.BikeCrashID AND BR.BikeCrashID=D.BikeCrashID AND
-	BL.rural_urba=loc;
-	END IF;
+	) as P,
+	(
+	SELECT COUNT(*), rural_urba, drvr_alc_d
+	FROM BikeCrashLoc, Driver_BikeCrash
+	WHERE BikeCrashLoc.BikeCrashID=Driver_BikeCrash.BikeCrashID
+	GROUP BY rural_urba, drvr_alc_d
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM BikeCrashLoc AS L, Driver_BikeCrash AS D
+	WHERE L.BikeCrashID=D.BikeCrashID AND L.rural_urba=BikeCrashLoc.rural_urba
+	GROUP BY rural_urba, drvr_alc_d
+	)
+	) AS A,
+	(
+	SELECT COUNT(*), rural_urba, crsh_sevri
+	FROM BikeCrashLoc, BikeCrashResult
+	WHERE BikeCrashLoc.BikeCrashID=BikeCrashResult.BikeCrashID
+	GROUP BY rural_urba, crsh_sevri
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM BikeCrashLoc AS L, BikeCrashResult AS R
+	WHERE L.BikeCrashID=R.BikeCrashID AND L.rural_urba=BikeCrashLoc.rural_urba
+	GROUP BY rural_urba, crsh_sevri
+	)
+	) AS S
+	WHERE P.rural_urba=A.rural_urba AND P.rural_urba=S.rural_urba;
 END|
 delimiter ;
+
 
 DROP PROCEDURE IF EXISTS LocAccidentRate_Ped;
 delimiter |
@@ -514,21 +538,42 @@ CREATE PROCEDURE LocAccidentRate_Ped(loc VARCHAR(5))
 BEGIN
 	DECLARE total_count INT;
 	SELECT COUNT(*) FROM PedCrashRdCond INTO total_count;
-	IF (EXISTS (SELECT * FROM PedCrashRdCond WHERE rural_urba=loc)) THEN
-	SELECT P.percentage, PD.hit_run, drvr_alc_d, weather, crsh_sevri
-	FROM PedCrashRdCond AS PR, ReasonPed AS R, PedCrashDetail AS PD, DiverBiker_PedCrash As D,
+	SELECT P.percentage, A.drvr_alc_d, S.crsh_sevri
+	FROM
 	(
-	SELECT COUNT(*)/total_count*100 AS percentage
+	SELECT COUNT(*)/total_count*100 AS percentage, rural_urba
 	FROM PedCrashRdCond
-	WHERE PedCrashRdCond.rural_urba=loc
-	) as P
-	WHERE PR.PedCrashID=R.PedCrashID AND R.PedCrashID=PD.PedCrashID AND PD.PedCrashID=D.PedCrashID
-	AND PR.rural_urba=loc;
-	END IF;
+	WHERE rural_urba=loc
+	) AS P,
+	(
+	SELECT COUNT(*), rural_urba, drvr_alc_d
+	FROM PedCrashRdCond, DiverBiker_PedCrash
+	WHERE PedCrashRdCond.PedCrashID=DiverBiker_PedCrash.PedCrashID
+	GROUP BY rural_urba, drvr_alc_d
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM PedCrashRdCond AS R, DiverBiker_PedCrash AS D
+	WHERE R.PedCrashID=D.PedCrashID AND R.rural_urba=PedCrashRdCond.rural_urba
+	GROUP BY rural_urba, drvr_alc_d
+	)
+	) AS A,
+	(
+	SELECT COUNT(*), rural_urba, crsh_sevri
+	FROM PedCrashRdCond, PedCrashDetail
+	WHERE PedCrashRdCond.PedCrashID=PedCrashDetail.PedCrashID
+	GROUP BY rural_urba, crsh_sevri
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM PedCrashRdCond AS R, PedCrashDetail AS D
+	WHERE R.PedCrashID=D.PedCrashID AND R.rural_urba=PedCrashRdCond.rural_urba
+	GROUP BY rural_urba, crsh_sevri
+	)
+	) AS S
+	WHERE P.rural_urba=A.rural_urba AND P.rural_urba=S.rural_urba;
 END|
 delimiter ;
-
-
 
 
 # query 13
@@ -537,18 +582,58 @@ delimiter |
 CREATE PROCEDURE DriverInfo(type VARCHAR(10))
 BEGIN
 	IF (type="pedestrian") THEN
-	SELECT drvr_sex, drvr_age, drvr_vehty, D.drvr_injur, crash_type
-	FROM DiverBiker_PedCrash AS D, PedCrashDetail AS Detail
-	WHERE D.PedCrashID=Detail.PedCrashID;
+	SELECT *
+	FROM
+	(
+	SELECT drvr_sex AS type, COUNT(*) AS count
+	FROM DiverBiker_PedCrash
+	GROUP BY drvr_sex
+	UNION
+	SELECT drvr_race AS type, COUNT(*) AS count
+	FROM DiverBiker_PedCrash
+	GROUP BY drvr_race 
+	UNION
+	SELECT drvrage_gr AS type, COUNT(*) AS count
+	FROM DiverBiker_PedCrash
+	GROUP BY drvrage_gr
+	UNION
+	SELECT crash_type AS type, COUNT(*) AS count
+	FROM PedCrashDetail
+	GROUP BY crash_type
+	UNION
+	SELECT crsh_sevri AS type, COUNT(*) AS count
+	FROM PedCrashDetail
+	GROUP BY crsh_sevri
+	) AS P;
 	ELSEIF (type="bike") THEN
-	SELECT drvr_sex, drvr_age, drvr_vehty, D.drvr_injur, crash_type
-	FROM Driver_BikeCrash AS D, BikeCrashResult AS R
-	WHERE D.BikeCrashID=R.BikeCrashID;
+	SELECT *
+	FROM
+	(
+	SELECT drvr_sex AS type, COUNT(*) AS count
+	FROM Driver_BikeCrash
+	GROUP BY drvr_sex
+	UNION
+	SELECT drvr_race AS type, COUNT(*) AS count
+	FROM Driver_BikeCrash
+	GROUP BY drvr_race 
+	UNION
+	SELECT drvrage_gr AS type, COUNT(*) AS count
+	FROM Driver_BikeCrash
+	GROUP BY drvrage_gr
+	UNION
+	SELECT crash_type AS type, COUNT(*) AS count
+	FROM BikeCrashResult
+	GROUP BY crash_type
+	UNION
+	SELECT crsh_sevri AS type, COUNT(*) AS count
+	FROM BikeCrashResult
+	GROUP BY crsh_sevri
+	) AS P;
 	END IF;
 END|
 delimiter ;
 
-
+call Driver_Info("bike");
 
 # query 14
 DROP PROCEDURE IF EXISTS IntersectAccidentRate;
@@ -625,7 +710,7 @@ DROP PROCEDURE IF EXISTS Traffic_Bike;
 delimiter |
 CREATE PROCEDURE Traffic_Bike()
 BEGIN
-	SELECT R.traff_cntr, TrafficC.traff_count/TotalC.total_count*100 AS TrafficControlRate, Result.crsh_sevri, num_lanes
+	SELECT TrafficC.traff_cntr, TrafficC.traff_count/TotalC.total_count*100 AS TrafficControlRate, Severity.crsh_sevri, Lanes.num_lanes
 	FROM
 	(
 	SELECT COUNT(*) AS traff_count, traff_cntr
@@ -640,21 +725,39 @@ BEGIN
 	SELECT COUNT(*), traff_cntr, crsh_sevri
 	FROM BikeCrashRdCond, BikeCrashResult
 	WHERE BikeCrashRdCond.BikeCrashID=BikeCrashResult.BikeCrashID
+	GROUP BY traff_cntr, crsh_sevri
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM BikeCrashRdCond AS R, BikeCrashResult AS Result
+	WHERE R.BikeCrashID=Result.BikeCrashID AND R.traff_cntr=BikeCrashRdCond.traff_cntr
+	GROUP BY traff_cntr, crsh_sevri
+	)
 	) AS Severity,
 	(
-	SELECT 
+	SELECT COUNT(*), traff_cntr, num_lanes
+	FROM BikeCrashRdCond
+	GROUP BY traff_cntr, num_lanes
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM BikeCrashRdCond AS R
+	WHERE R.traff_cntr=BikeCrashRdCond.traff_cntr
+	GROUP BY traff_cntr, num_lanes
+	)
 	) AS Lanes
-	WHERE R.BikeCrashID=Result.BikeCrashID AND TrafficC.traff_cntr=R.traff_cntr
-	ORDER BY TrafficControlRate DESC;
+	WHERE Severity.traff_cntr=TrafficC.traff_cntr AND Lanes.traff_cntr=TrafficC.traff_cntr
+	ORDER BY TrafficControlRate DESC, TrafficC.traff_cntr ASC;
 END|
 delimiter ;
+
 
 DROP PROCEDURE IF EXISTS Traffic_Ped;
 delimiter |
 CREATE PROCEDURE Traffic_Ped()
 BEGIN
-	SELECT R.traff_cntr, TrafficC.traff_count/TotalC.total_count*100 AS TrafficControlRate, D.crsh_sevri, num_lanes
-	FROM PedCrashRdCond AS R, PedCrashDetail AS D,
+	SELECT TrafficC.traff_cntr, TrafficC.traff_count/TotalC.total_count*100 AS TrafficControlRate, Severity.crsh_sevri, Lanes.num_lanes
+	FROM
 	(
 	SELECT COUNT(*) AS traff_count, traff_cntr
 	FROM PedCrashRdCond
@@ -663,8 +766,33 @@ BEGIN
 	(
 	SELECT COUNT(*) AS total_count
 	FROM PedCrashRdCond
-	) AS TotalC
-	WHERE R.PedCrashID=D.PedCrashID AND TrafficC.traff_cntr=R.traff_cntr
-	ORDER BY TrafficControlRate DESC;
+	) AS TotalC,
+	(
+	SELECT COUNT(*), traff_cntr, crsh_sevri
+	FROM PedCrashRdCond, PedCrashDetail
+	WHERE PedCrashRdCond.PedCrashID=PedCrashDetail.PedCrashID
+	GROUP BY traff_cntr, crsh_sevri
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM PedCrashRdCond AS R, PedCrashDetail AS D
+	WHERE R.PedCrashID=D.PedCrashID AND R.traff_cntr=PedCrashRdCond.traff_cntr
+	GROUP BY traff_cntr, crsh_sevri
+	)
+	) AS Severity,
+	(
+	SELECT COUNT(*), traff_cntr, num_lanes
+	FROM PedCrashRdCond
+	GROUP BY traff_cntr, num_lanes
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM PedCrashRdCond AS R
+	WHERE R.traff_cntr=PedCrashRdCond.traff_cntr
+	GROUP BY traff_cntr, num_lanes
+	)
+	) AS Lanes
+	WHERE TrafficC.traff_cntr=Lanes.traff_cntr AND TrafficC.traff_cntr=Severity.traff_cntr
+	ORDER BY TrafficControlRate DESC, TrafficC.traff_cntr ASC;
 END|
 delimiter ;
