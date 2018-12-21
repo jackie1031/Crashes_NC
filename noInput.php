@@ -79,7 +79,7 @@
 			echo "<table border=1>\n";
 			echo "<tr><td>Crash Location</td><td>Percentage</td><td>Most Frequent Severity</td><td>Most Frequent Weather</td><td>Most Frequent Light Condition</td><td>Most Frequent # of Lanes</td></tr>\n";
 			while ($row = mysqli_fetch_array($result)) {
-				$crsh_loc = $row['crsh_loc'];
+				$crash_loc = $row['crash_loc'];
 			    $percentage = $row['percentage'];
 			    $crsh_sevri = $row['crsh_sevri'];
 			    $weather = $row['weather'];
