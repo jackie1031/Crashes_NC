@@ -107,8 +107,8 @@ BEGIN
 	IF (t_to IS NOT NULL) THEN SET time_to=t_to;
 	END IF;
 
-	SELECT CrashC.crash_count, TotalC.total_count, CrashC.crash_count/TotalC.total_count*100 AS percentage, L.city, R.crash_type, R.crsh_sevri
-	FROM BikeCrashTime AS T, BikeCrashResult AS R, BikeCrashLoc AS L,
+	SELECT CrashC.crash_count, TotalC.total_count, CrashC.crash_count/TotalC.total_count*100 AS percentage, CrashC.city, Type.crash_type, Severity.crsh_sevri
+	FROM
 	(
 	SELECT COUNT(*) AS crash_count, BikeCrashLoc.city
 	FROM BikeCrashLoc, BikeCrashTime
@@ -117,16 +117,45 @@ BEGIN
 	GROUP BY BikeCrashLoc.city
 	) AS CrashC,
 	(
-	SELECT COUNT(*) AS total_count, BikeCrashLoc.city
-	FROM BikeCrashLoc
-	GROUP BY BikeCrashLoc.city
-	) AS TotalC
-	WHERE T.BikeCrashID=R.BikeCrashID AND R.BikeCrashID=L.BikeCrashID AND
-	T.crash_hour>=time_from AND T.crash_hour<time_to AND CrashC.city=TotalC.city
-	AND L.city=CrashC.city
-	ORDER BY percentage DESC;
+	SELECT COUNT(*) AS total_count
+	FROM BikeCrashTime
+	WHERE BikeCrashTime.crash_hour>=time_from AND BikeCrashTime.crash_hour<time_to
+	) AS TotalC,
+	(
+	SELECT COUNT(*), city, crash_type
+	FROM BikeCrashResult, BikeCrashLoc, BikeCrashTime
+	WHERE BikeCrashResult.BikeCrashID=BikeCrashLoc.BikeCrashID AND BikeCrashLoc.BikeCrashID=BikeCrashTime.BikeCrashID
+	AND BikeCrashTime.crash_hour>=time_from AND BikeCrashTime.crash_hour<time_to
+	GROUP BY city, crash_type
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM BikeCrashResult AS Result, BikeCrashLoc AS L, BikeCrashTime AS T
+	WHERE Result.BikeCrashID=L.BikeCrashID AND L.BikeCrashID=T.BikeCrashID AND
+	T.crash_hour>=time_from AND T.crash_hour<time_to AND L.city=BikeCrashLoc.city
+	GROUP BY city, crash_type
+	)
+	) AS Type,
+	(
+	SELECT COUNT(*), city, crsh_sevri
+	FROM BikeCrashResult, BikeCrashLoc, BikeCrashTime
+	WHERE BikeCrashResult.BikeCrashID=BikeCrashLoc.BikeCrashID AND BikeCrashLoc.BikeCrashID=BikeCrashTime.BikeCrashID
+	AND BikeCrashTime.crash_hour>=time_from AND BikeCrashTime.crash_hour<time_to
+	GROUP BY city, crsh_sevri
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM BikeCrashResult AS Result, BikeCrashLoc AS L, BikeCrashTime AS T
+	WHERE Result.BikeCrashID=L.BikeCrashID AND L.BikeCrashID=T.BikeCrashID AND
+	T.crash_hour>=time_from AND T.crash_hour<time_to AND L.city=BikeCrashLoc.city
+	GROUP BY L.city, Result.crsh_sevri
+	)
+	) AS Severity
+	WHERE Type.city=CrashC.city AND Severity.city=CrashC.city
+	ORDER BY percentage DESC, city ASC;
 END|
 delimiter ;
+
 
 DROP PROCEDURE IF EXISTS AccidentRate_Ped;
 delimiter |
@@ -139,8 +168,8 @@ BEGIN
 	IF (t_to IS NOT NULL) THEN SET time_to=t_to;
 	END IF;
 
-	SELECT CrashC.crash_count, TotalC.total_count, CrashC.crash_count/TotalC.total_count*100 AS percentage, R.city, R.crash_type, R.crsh_sevri
-	FROM PedCrashDetail AS R,
+	SELECT CrashC.crash_count, TotalC.total_count, CrashC.crash_count/TotalC.total_count*100 AS percentage, CrashC.city, Type.crash_type, Severity.crsh_sevri
+	FROM
 	(
 	SELECT COUNT(*) AS crash_count, PedCrashDetail.city
 	FROM PedCrashDetail
@@ -148,18 +177,42 @@ BEGIN
 	GROUP BY PedCrashDetail.city
 	) AS CrashC,
 	(
-	SELECT COUNT(*) AS total_count, PedCrashDetail.city
+	SELECT COUNT(*) AS total_count
 	FROM PedCrashDetail
-	GROUP BY PedCrashDetail.city
-	) AS TotalC
-	WHERE R.crash_hour>=time_from AND R.crash_hour<time_to AND CrashC.city=TotalC.city
-	AND R.city=CrashC.city
-	ORDER BY percentage DESC;
+	WHERE PedCrashDetail.crash_hour>=time_from AND PedCrashDetail.crash_hour<time_to
+	) AS TotalC,
+	(
+	SELECT COUNT(*), PedCrashDetail.city, crash_type
+	FROM PedCrashDetail, PedCrashRdCond
+	WHERE PedCrashDetail.PedCrashID=PedCrashRdCond.PedCrashID
+	AND PedCrashDetail.crash_hour>=time_from AND PedCrashDetail.crash_hour<time_to
+	GROUP BY PedCrashDetail.city, crash_type
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM PedCrashDetail AS D, PedCrashRdCond AS R
+	WHERE D.PedCrashID=R.PedCrashID AND
+	D.crash_hour>=time_from AND D.crash_hour<time_to AND R.city=PedCrashDetail.city
+	GROUP BY D.city, crash_type
+	)
+	) AS Type,
+	(
+	SELECT COUNT(*), PedCrashDetail.city, crsh_sevri
+	FROM PedCrashDetail
+	WHERE PedCrashDetail.crash_hour>=time_from AND PedCrashDetail.crash_hour<time_to
+	GROUP BY PedCrashDetail.city, crsh_sevri
+	HAVING COUNT(*) >= ALL
+	(
+	SELECT COUNT(*)
+	FROM PedCrashDetail AS D
+	WHERE D.crash_hour>=time_from AND D.crash_hour<time_to AND D.city=PedCrashDetail.city
+	GROUP BY D.city, D.crsh_sevri
+	)
+	) AS Severity
+	WHERE Type.city=CrashC.city AND Severity.city=CrashC.city
+	ORDER BY percentage DESC, CrashC.city ASC;
 END|
 delimiter ;
-
-call AccidentRate_Ped(2.0, 10.0);
-
 
 
 # query 6
@@ -306,7 +359,7 @@ delimiter |
 CREATE PROCEDURE AgeGpAccidentRate_Bike(age VARCHAR(7))
 BEGIN
 	IF (EXISTS (SELECT * FROM Biker WHERE bikeage_gr=age)) THEN
-	SELECT C.count, Biker.bikeage_gr, bike_injur, bike_race, bike_dir, bike_sex, bike_pos, bike_alc_d
+	SELECT Biker.bikeage_gr, bike_injur, bike_race, bike_dir, bike_sex, bike_pos, bike_alc_d
 	FROM
 	(
 	SELECT COUNT(*) as count, B.bikeage_gr
@@ -323,7 +376,7 @@ delimiter |
 CREATE PROCEDURE AgeGpAccidentRate_Ped(age VARCHAR(7))
 BEGIN
 	IF (EXISTS (SELECT * FROM PedInjure WHERE pedage_grp=age)) THEN
-	SELECT C.count, PedInjure.pedage_grp, ped_pos, ped_race, ped_injury, ped_sex
+	SELECT PedInjure.pedage_grp, ped_pos, ped_race, ped_injury, ped_sex
 	FROM
 	(
 	SELECT COUNT(*) as count, P.pedage_grp
@@ -334,8 +387,6 @@ BEGIN
 	END IF;
 END|
 delimiter ;
-
-call AgeGpAccidentRate_Ped("25-29");
 
 
 
