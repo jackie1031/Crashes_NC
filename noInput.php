@@ -85,7 +85,7 @@
 			    $weather = $row['weather'];
 			    $light_cond = $row['light_cond'];
 			    $num_lanes = $row['num_lanes'];
-			    echo "<tr><td>".$crsh_loc."</td><td>".$percentage."</td>><td>".$crsh_sevri."</td><td>".$weather."</td><td>".$light_cond."</td><td>".$num_lanes."</td></tr>";
+			    echo "<tr><td>".$crash_loc."</td><td>".$percentage."</td>><td>".$crsh_sevri."</td><td>".$weather."</td><td>".$light_cond."</td><td>".$num_lanes."</td></tr>";
 			}
 			echo "</table>\n";
 			$result->close();

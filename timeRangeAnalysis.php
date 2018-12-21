@@ -17,6 +17,15 @@
 
 		$time_f = $_POST['time_f'];
 		$time_to = $_POST['time_to'];
+
+		if (empty($time_f)) {
+			$time_f = NULL;
+		}
+
+		if (empty($time_to)) {
+			$time_to = NULL;
+		}
+
 		echo "Note: If the table is empty, it means there are no crashes during this time range.\n";
 
 
