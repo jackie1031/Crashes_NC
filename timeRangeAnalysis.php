@@ -8,104 +8,139 @@
 		$dbhost = 'dbase.cs.jhu.edu:3306';
 		$dbuser = 'ycao29';
 		$dbpass = 'wyxjaycqli';
-		$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+		$dbname = 'cs41518_ycao29_db';
+		$db = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
 
-		if (!$conn) {
-			die ('Error connecting to mysql');
+		if(mysqli_connect_errno()){
+			echo mysqli_connect_error();
 		}
 
 		$time_f = $_POST['time_f'];
 		$time_to = $_POST['time_to'];
 
-		$dbname = 'cs41518_ycao29_db';
-		mysql_select_db($dbname, $conn);
-
 		echo "Cities with higher accident rate during entered time:\n";
 		echo "Pedestrian crash:\n";
-		$result_ped = mysql_query("CALL AccidentRate_Ped($time_f, $time_to)", $conn);
-		if (!$result_ped){
+		$result = $db->query("CALL AccidentRate_Ped($time_f, $time_to)");
+		if (!$result){
 			echo "Fail to retrieve info for pedestrian crashes!\n";
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>CrashCount</td><td>TotalCount</td><td>Percentage</td><td>City</td><td>CrashType</td></tr>\n";
-			while ($myrow = mysql_fetch_array($result_ped)) {
-				printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["crash_count"], $myrow["total_count"], $myrow["percentage"], $myrow["city"], $myrow["crash_type"]);
+			echo "<tr><td>Crash Count</td><td>Total Count</td><td>Percentage</td><td>City</td><td>Crash Type</td></tr>\n";
+			while ($row = mysqli_fetch_array($result)) {
+				$crash_count = $row['crash_count'];
+			    $total_count = $row['total_count'];
+			    $percentage = $row['percentage'];
+				$city = $row['city'];
+			    $crash_type = $row['crash_type'];
+			    echo "<tr><td>".$crash_count."</td><td>".$total_count."</td><td>".$percentage."</td><td>".$city."</td><td>".$crash_type."</td></tr>";
 			}
 			echo "</table>\n";
+			$result->close();
+		    $db->next_result();
 		}
 		echo "Bike crash:\n";
-		$result_bike = mysql_query("CALL AccidentRate_Bike($time_f, $time_to)", $conn);
-		if (!$result_bike){
+		$result = $db->query("CALL AccidentRate_Bike($time_f, $time_to)");
+		if (!$result){
 			echo "Fail to retrieve info for bike crashes!\n";
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>CrashCount</td><td>TotalCount</td><td>Percentage</td><td>City</td><td>CrashType</td></tr>\n";
-			while ($myrow = mysql_fetch_array($result_bike)) {
-				printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["crash_count"], $myrow["total_count"], $myrow["percentage"], $myrow["city"], $myrow["crash_type"]);
+			echo "<tr><td>Crash Count</td><td>Total Count</td><td>Percentage</td><td>City</td><td>Crash Type</td></tr>\n";
+			while ($row = mysqli_fetch_array($result)) {
+				$crash_count = $row['crash_count'];
+			    $total_count = $row['total_count'];
+			    $percentage = $row['percentage'];
+				$city = $row['city'];
+			    $crash_type = $row['crash_type'];
+			    echo "<tr><td>".$crash_count."</td><td>".$total_count."</td><td>".$percentage."</td><td>".$city."</td><td>".$crash_type."</td></tr>";
 			}
 			echo "</table>\n";
+			$result->close();
+		    $db->next_result();
 		}
 
 
 		echo "Correlation between ambulance response and severity of injury during entered time:\n";
 		echo "Pedestrian crash:\n";
-		$result_ped = mysql_query("CALL AmbulanceSevri_Ped($time_f, $time_to)", $conn);
-		if (!$result_ped){
+		$result = $db->query("CALL AmbulanceSevri_Ped($time_f, $time_to)");
+		if (!$result){
 			echo "Fail to retrieve info for pedestrian crashes!\n";
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>AmbulanceResponse</td><td>CrashSeverity</td><td>TotalCrashCount</td></tr>\n";
-			while ($myrow = mysql_fetch_array($result_ped)) {
-				printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["ambulancer"], $myrow["crsh_sevri"], $myrow["count"]);
+			echo "<tr><td>Ambulance Response</td><td>Crash Severity</td><td>Total Crash Count</td></tr>\n";
+			while ($row = mysqli_fetch_array($result)) {
+				$ambulancer = $row['ambulancer'];
+			    $crsh_sevri = $row['crsh_sevri'];
+			    $count = $row['count'];
+			    echo "<tr><td>".$ambulancer."</td><td>".$crsh_sevri."</td><td>".$count."</td></tr>";
 			}
 			echo "</table>\n";
+			$result->close();
+		    $db->next_result();
 		}
+
 		echo "Bike crash:\n";
-		$result_bike = mysql_query("CALL AmbulanceSevri_Bike($time_f, $time_to)", $conn);
-		if (!$result_bike){
-			echo "Fail to retrieve info for pedestrian crashes!\n";
+		$result = $db->query("CALL AmbulanceSevri_Bike($time_f, $time_to)");
+		if (!$result){
+			echo "Fail to retrieve info for bike crashes!\n";
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>AmbulanceResponse</td><td>CrashSeverity</td><td>TotalCrashCount</td></tr>\n";
-			while ($myrow = mysql_fetch_array($result_bike)) {
-				printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["ambulancer"], $myrow["crsh_sevri"], $myrow["count"]);
+			echo "<tr><td>Ambulance Response</td><td>Crash Severity</td><td>Total Crash Count</td></tr>\n";
+			while ($row = mysqli_fetch_array($result)) {
+				$ambulancer = $row['ambulancer'];
+			    $crsh_sevri = $row['crsh_sevri'];
+			    $count = $row['count'];
+			    echo "<tr><td>".$ambulancer."</td><td>".$crsh_sevri."</td><td>".$count."</td></tr>";
 			}
 			echo "</table>\n";
+			$result->close();
+		    $db->next_result();
 		}
 
 
 		echo "Hit and run rate during entered time:\n";
 		echo "Pedestrian crash:\n";
-		$result_ped = mysql_query("CALL HitRun_Ped($time_f, $time_to)", $conn);
-		if (!$result_ped){
+		$result = $db->query("CALL HitRun_Ped($time_f, $time_to)");
+		if (!$result){
 			echo "Fail to retrieve info for pedestrian crashes!\n";
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>HitAndRun</td><td>Percentage</td><td>CrashHour</td><td>Weather</td></tr>\n";
-			while ($myrow = mysql_fetch_array($result_ped)) {
-				printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["hit_run"], $myrow["percentage"], $myrow["crash_hour"], $myrow["weather"]);
+			echo "<tr><td>Hit And Run</td><td>Percentage</td><td>Crash Hour</td><td>Weather</td></tr>\n";
+			while ($row = mysqli_fetch_array($result)) {
+				$hit_run = $row['hit_run'];
+			    $percentage = $row['percentage'];
+			    $crash_hour = $row['crash_hour'];
+			    $weather = $row['weather'];
+			    echo "<tr><td>".$hit_run."</td><td>".$percentage."</td><td>".$crash_hour."</td><td>".$weather."</td></tr>";
 			}
 			echo "</table>\n";
+			$result->close();
+		    $db->next_result();
 		}
+
 		echo "Bike crash:\n";
-		$result_bike = mysql_query("CALL HitRun_Bike($time_f, $time_to)", $conn);
-		if (!$result_bike){
-			echo "Fail to retrieve info for pedestrian crashes!\n";
+		$result = $db->query("CALL HitRun_Bike($time_f, $time_to)");
+		if (!$result){
+			echo "Fail to retrieve info for bike crashes!\n";
 			print mysql_error();
 		} else {
 			echo "<table border=1>\n";
-			echo "<tr><td>HitAndRun</td><td>Percentage</td><td>CrashHour</td><td>Weather</td></tr>\n";
-			while ($myrow = mysql_fetch_array($result_bike)) {
-				printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["hit_run"], $myrow["percentage"], $myrow["crash_hour"], $myrow["weather"]);
+			echo "<tr><td>Hit And Run</td><td>Percentage</td><td>Crash Hour</td><td>Weather</td></tr>\n";
+			while ($row = mysqli_fetch_array($result)) {
+				$hit_run = $row['hit_run'];
+			    $percentage = $row['percentage'];
+			    $crash_hour = $row['crash_hour'];
+			    $weather = $row['weather'];
+			    echo "<tr><td>".$hit_run."</td><td>".$percentage."</td><td>".$crash_hour."</td><td>".$weather."</td></tr>";
 			}
 			echo "</table>\n";
+			$result->close();
+		    $db->next_result();
 		}
-		mysql_close();
 	?>
 
 </body>
