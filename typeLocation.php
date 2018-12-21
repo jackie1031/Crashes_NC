@@ -17,7 +17,7 @@
 		
 		$location = $_POST['typeLoc'];
 
-		echo "Pedestrian crash:\n";
+		echo nl2br("Pedestrian crash:\n");
 		$result = $db->query("CALL LocAccidentRate_Ped('$location')");
 		if (!$result){
 			echo "Fail to retrieve info for pedestrian crashes!\n";
@@ -31,12 +31,12 @@
 			    $crsh_sevri = $row['crsh_sevri'];
 			    echo "<tr><td>".$percentage."</td><td>".$drvr_alc_d."</td><td>".$crsh_sevri."</td></tr>";
 			}
-			echo "</table>\n";
+			echo nl2br("</table>\n");
 			$result->close();
 		    $db->next_result();
 		}
 
-		echo "Bike crash:\n";
+		echo nl2br("Bike crash:\n");
 		$result = $db->query("CALL LocAccidentRate_Bike('$location')");
 		if (!$result){
 			echo "Fail to retrieve info for bike crashes!\n";
