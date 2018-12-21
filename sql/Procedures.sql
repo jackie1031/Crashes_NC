@@ -456,11 +456,11 @@ DROP PROCEDURE IF EXISTS DriverInfo;
 delimiter |
 CREATE PROCEDURE DriverInfo(type VARCHAR(10))
 BEGIN
-	IF (type="Pedestrian") THEN
+	IF (type="pedestrian") THEN
 	SELECT drvr_sex, drvr_age, drvr_vehty, D.drvr_injur, crash_type
 	FROM DiverBiker_PedCrash AS D, PedCrashDetail AS Detail
 	WHERE D.PedCrashID=Detail.PedCrashID;
-	ELSEIF (type="Bike") THEN
+	ELSEIF (type="bike") THEN
 	SELECT drvr_sex, drvr_age, drvr_vehty, D.drvr_injur, crash_type
 	FROM Driver_BikeCrash AS D, BikeCrashResult AS R
 	WHERE D.BikeCrashID=R.BikeCrashID;
