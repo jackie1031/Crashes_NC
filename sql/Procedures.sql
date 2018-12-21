@@ -823,6 +823,9 @@ BEGIN
 	SELECT *
 	FROM
 	(
+	SELECT "Total" AS type, COUNT(*) AS count
+	FROM DiverBiker_PedCrash
+	UNION
 	SELECT drvr_sex AS type, COUNT(*) AS count
 	FROM DiverBiker_PedCrash
 	GROUP BY drvr_sex
@@ -847,6 +850,9 @@ BEGIN
 	SELECT *
 	FROM
 	(
+	SELECT "Total" AS type, COUNT(*) AS count
+	FROM Driver_BikeCrash
+	UNION
 	SELECT drvr_sex AS type, COUNT(*) AS count
 	FROM Driver_BikeCrash
 	GROUP BY drvr_sex
