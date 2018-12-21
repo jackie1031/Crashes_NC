@@ -8,66 +8,80 @@
 		$dbhost = 'dbase.cs.jhu.edu:3306';
 		$dbuser = 'ycao29';
 		$dbpass = 'wyxjaycqli';
-		$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+		$dbname = 'cs41518_ycao29_db';
+		$db = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
 
-		if (!$conn) {
-			die ('Error connecting to mysql');
+		if(mysqli_connect_errno()){
+			echo mysqli_connect_error();
 		}
-
-
 	    $city = $_POST['city'];
 		
-		echo "!!!!!!!!!! finally, the city is: $city";
+		// echo "!!!!!!!!!! finally, the city is: $city";
 
-		$dbname = 'cs41518_ycao29_db';
-		mysql_select_db($dbname, $conn);
+		echo "Data analysis for pedestrian crashes \n";
 
-		// $result = mysql_query("CALL ShowCrashTypes_Comb", $conn);
-		// if (!$result){
-		// 	echo "Fail to retrieve list of crash types!\n";
-		// 	print mysql_error();
-		// } else {
-		// 	echo "<table border=1>\n";
-		// 	echo "<tr><td>PedestrianCrashTypes</td><td>BikeCrashTypes</td></tr>\n";
-		// 	while ($myrow = mysql_fetch_array($result)) {
-		// 		printf("<tr><td>%s</td><td>%s</td></tr>\n", $myrow["Ped_crashtype"], $myrow["Bike_crashtype"]);
-		// 	}
-		// 	echo "</table>\n";
-		// }
-
-		// mysql_free_result($result);
-
-
-
-		$result = mysql_query("CALL CrashTypeRate_Ped('$city')", $conn);
-		if (!$result){
-			echo "Fail to retrieve result for pedestrian crashes!\n";
-			print mysql_error();
-		} else {
+		$result = $db->query("CALL CrashTypeRate_Ped('$city')");
+		if($result){
+		     // Cycle through results
 			echo "<table border=1>\n";
 			echo "<tr><td>CrashType</td><td>Count</td><td>TotalCount</td></tr>\n";
-			while ($myrow = mysql_fetch_array($result)) {
-				printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["crash_type"], $myrow["type_count"], $myrow["total_count"]);
-			}
-			echo "</table>\n";
+		    while($row = mysqli_fetch_array($result)) {
+		        // $user_arr[] = $row;
+				// printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>\n", $row["crash_type"], $row["type_count"], $row["total_count"]);
+
+				$crash_type = $row['crash_type'];
+			    $type_count = $row['type_count'];
+			    $total_count = $row['total_count'];
+			    echo "<tr><td>".$crash_type."</td><td>".$type_count."</td><td>".$total_count."</td></tr>";
+			} 
+		    
+		    echo "</table>\n";
+		    // Free result set
+		    $result->close();
+		    $db->next_result();
 		}
 
 
-		$result_bike = mysql_query("CALL CrashTypeRate_Bike('$city')", $conn);
-		if (!$result_bike) {
-			echo "Fail to retrieve result for bike crashes!\n";
-    		print mysql_error();
-		} else {
-			echo "got here!!!!!!";
+		echo "\n \n Data analysis for bike crashes \n";
+		$result = $db->query("CALL CrashTypeRate_Bike('$city')");
+		if($result){
+		     // Cycle through results
 			echo "<table border=1>\n";
 			echo "<tr><td>CrashType</td><td>Count</td><td>TotalCount</td></tr>\n";
-			while ($myrow = mysql_fetch_array($result_bike)) {
-				printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>\n", $myrow["crash_type"], $myrow["type_count"], $myrow["total_count"]);
-			}
-			echo "</table>\n";
+		    while($row = mysqli_fetch_array($result)) {
+
+				$crash_type = $row['crash_type'];
+			    $type_count = $row['type_count'];
+			    $total_count = $row['total_count'];
+			    echo "<tr><td>".$crash_type."</td><td>".$type_count."</td><td>".$total_count."</td></tr>";
+			} 
+		    
+		    echo "</table>\n";
+		    // Free result set
+		    $result->close();
+		    $db->next_result();
 		}
 
-		mysql_close();
+		echo "All possible crash type for pedestrian and bike \n";
+
+		$result = $db->query("CALL ShowCrashTypes_Comb");
+		if($result){
+		     // Cycle through results
+			echo "<table border=1>\n";
+			echo "<tr><td>ALL Pedestrian Crash Types</td><td>All Bike Crash Types</td></tr>\n";
+		    while($row = mysqli_fetch_array($result)) {
+				$Ped_crashtype = $row['Ped_crashtype'];
+			    $Bike_crashtype = $row['Bike_crashtype'];
+			    echo "<tr><td>".$Ped_crashtype."</td><td>".$Bike_crashtype."</td></tr>";
+			} 
+		    
+		    echo "</table>\n";
+		    // Free result set
+		    $result->close();
+		    $db->next_result();
+		}
+
+		$db->close();
 	?>
 
 </body>

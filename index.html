@@ -49,24 +49,10 @@
 		  <input type="submit" name="submit" >
 		</form>
 
-
-<!--  		<form action="crashTypeInArea.php">
-		  <select id="city" name="city">
-		    <option value="chapelHill">Chapel Hill</option>
-		    <option value="durham">Durham</option>
-		    <option value="carrboro">Carrboro</option>
-		    <option value="none">None - Rural Crash</option>
-		  </select>
-		  <br><br>
-		  <input type="submit" name="submit" >
-		</form>  -->
-
-<!-- <input type="submit" name="submit" value="Get Selected Values" />
- -->
 		<h3>2.Here you can enter a time range(from 0 to 24) to see which area has higher accident rate, ambulance response rate, and hit and run rate. </h3>
 		<p>Please enter the time range (only positive integers allowed):</p>
 
-		<form action="timeRangeAnalysis.php" method="post">
+		<form action="timeRangeAnalysis.php" method="POST">
 			Enter time from: <input type="number" name="time_f" min="0" max="24"><br>
 			Enter time to: <input type="number" name="time_to" min = "0" max="24"><br>
 		<input type="submit">
@@ -74,7 +60,7 @@
 
 		<h3>3. Select a condition(weather, light condition, etc.) and see how it correlates with pedestrian and bike crashes.</p>
 		<p>Please select city name from this drop-down list:</p>
-		<form action="condition.php">
+		<form action="condition.php" method="POST">
 		  <select id="condition" name="condition">
 		    <option value="light">light condition</option>
 		    <option value="roadSurface">road surface</option>
@@ -88,7 +74,7 @@
 
 		<h3>4. For a selected age group, show all crashes data for the victim. </p>
 		<p>Please select city name from this drop-down list:</p>
-		<form action="ageGroup.php">
+		<form action="ageGroup.php" method="POST">
 		  <select name="age">
 		    <option value="6-10"> 6-10 </option>
 		    <option value="11-15">11-15</option>
